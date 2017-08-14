@@ -1,4 +1,8 @@
 # DarkSUSY_MC_MadGraph5_aMC-NLO
-1. Download the MAdGraph5 pakage: https://launchpad.net/mg5amcnlo
-2. Upload the package to the lxplus directory
-3. Unzip the package and rename it to MG5_aMC_v2_5_5
+## Download the MAdGraph5 pakage: https://launchpad.net/mg5amcnlo
+## Create a directory in lxplus and upload the package to the directory
+`mkdir ~/MadGraph5`
+`cd ~/MadGraph5`
+`scp ~/MG5_aMC_v2.5.5.tar.gz username@lxplus.cern.ch:~/MadGraph5`
+## Unzip the package and a folder "MG5_aMC_v2_5_5" is created
+`tar -xzf MG5_aMC_v2.5.5.tar.gz`
