@@ -37,14 +37,18 @@ Edit the file `pp_to_Higgs_HEFT_Model/LO/Cards/proc_card_mg5.dat` to be same as:
     # Output processes to MadEvent directory
     output -f
 
-## Generate the "PROC_heft_v4_0" folder
+## Setup the specified process
 Run `./MadGraph5/MG5_aMC_v2_5_5/bin/mg5_aMC pp_to_Higgs_HEFT_Model/LO/Cards/proc_card_mg5.dat` and a folder called "PROC_heft_v4_0" will be generated. 
 
 Use `firefox PROC_heft_v4_0/index.html` to check the specified process.
 
+Specify the model parameters `cd MadGraph5/MG5_aMC_v2_5_5/bin/PROC_heft_v4_0/Cards/` and change the Higgs mass to
+
+    25     1.25000000E+02   # H        mass
+
 ## Generate unweighted events
 
-`cd PROC_heft_v4_0/bin`
+`cd /MadGraph5/MG5_aMC_v2_5_5/bin/PROC_heft_v4_0/bin`
 
 `./generate_events`
 
