@@ -15,3 +15,11 @@ https://launchpad.net/mg5amcnlo
 ## Unzip the package and a folder "MG5_aMC_v2_5_5" will be created
 
 `tar -xzf MG5_aMC_v2.5.5.tar.gz`
+
+## Make a clean copy of the Template folder
+
+`cp -r Template pp_to_Higgs_HEFT_Model`
+
+## Set up process pp -> Higgs
+
+Edit the file pp_to_Higgs_HEFT_Model/LO/Cards/proc_card_mg5.dat to be same as:
