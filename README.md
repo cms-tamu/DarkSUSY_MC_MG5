@@ -1,6 +1,6 @@
 # DarkSUSY_MC_MadGraph5_aMC-NLO
 
-## Download the MAdGraph5 pakage
+## Download the MAdGraph5 package
 
 https://launchpad.net/mg5amcnlo
 
