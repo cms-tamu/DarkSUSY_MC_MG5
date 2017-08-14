@@ -16,10 +16,12 @@ https://launchpad.net/mg5amcnlo
 
 `tar -xzf MG5_aMC_v2.5.5.tar.gz`
 
+## Make clean copy of the Template
+`cp -r Template pp_to_Higgs_HEFT_Model`
 
 ## Set up process pp -> Higgs through a top loop(QED=0 QCD=99)
 
-Edit the file `Template/LO/Cards/proc_card_mg5.dat` to be same as:
+Edit the file `pp_to_Higgs_HEFT_Model/LO/Cards/proc_card_mg5.dat` to be same as:
 
 `import model sm`
 
@@ -46,3 +48,16 @@ Edit the file `Template/LO/Cards/proc_card_mg5.dat` to be same as:
 `# Output processes to MadEvent directory`
 
 `output -f`
+
+## Generate the "PROC_heft_v4_0" folder
+Run `./MadGraph5/MG5_aMC_v2_5_5/bin/mg5_aMC pp_to_Higgs_HEFT_Model/LO/Cards/proc_card_mg5.dat` and a folder called "PROC_heft_v4_0" will be generated. 
+
+Use `firefox PROC_heft_v4_0/index.html` to check the specified process.
+
+## Generate unweighted events
+
+`cd PROC_heft_v4_0/bin`
+
+`./generate_events`
+
+The lhe.gz file along with a txt setting file will be generated under `MadGraph5/MG5_aMC_v2_5_5/bin/PROC_heft_v4_0/Events` directory.
