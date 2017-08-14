@@ -22,15 +22,27 @@ https://launchpad.net/mg5amcnlo
 Edit the file `Template/LO/Cards/proc_card_mg5.dat` to be same as:
 
 `import model sm`
+
 `import model heft_v4`
+
 `# Define multiparticle labels`
+
 `define p = g u c d s u~ c~ d~ s~`
+
 `define j = g u c d s u~ c~ d~ s~`
+
 `define l+ = e+ mu+`
+
 `define l- = e- mu-`
+
 `define vl = ve vm vt`
+
 `define vl~ = ve~ vm~ vt~`
+
 `# Specify process(es) to run`
+
 `generate p p > h QED=0 QCD=99 HIG=1`
+
 `# Output processes to MadEvent directory`
+
 `output -f`
