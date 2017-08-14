@@ -22,4 +22,4 @@ https://launchpad.net/mg5amcnlo
 
 ## Set up process pp -> Higgs
 
-Edit the file pp_to_Higgs_HEFT_Model/LO/Cards/proc_card_mg5.dat to be same as:
+Edit the file `pp_to_Higgs_HEFT_Model/LO/Cards/proc_card_mg5.dat` to be same as:
