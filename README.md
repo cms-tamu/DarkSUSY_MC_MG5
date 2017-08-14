@@ -1,4 +1,4 @@
-# DarkSUSY_MC_MadGraph5_aMC-NLO
+# DarkSUSY MC three dimuons final state 
 
 ## Download the MAdGraph5 package
 
