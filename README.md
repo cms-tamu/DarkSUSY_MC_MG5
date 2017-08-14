@@ -20,6 +20,6 @@ https://launchpad.net/mg5amcnlo
 
 `cp -r Template pp_to_Higgs_HEFT_Model`
 
-## Set up process pp -> Higgs
+## Set up process pp -> Higgs through a top loop(QED=0 QCD=99)
 
 Edit the file `pp_to_Higgs_HEFT_Model/LO/Cards/proc_card_mg5.dat` to be same as:
