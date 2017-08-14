@@ -16,10 +16,30 @@ https://launchpad.net/mg5amcnlo
 
 `tar -xzf MG5_aMC_v2.5.5.tar.gz`
 
-## Make a clean copy of the Template folder
-
-`cp -r Template pp_to_Higgs_HEFT_Model`
 
 ## Set up process pp -> Higgs through a top loop(QED=0 QCD=99)
 
-Edit the file `pp_to_Higgs_HEFT_Model/LO/Cards/proc_card_mg5.dat` to be same as:
+Edit the file `Template/LO/Cards/proc_card_mg5.dat` to be same as:
+
+`
+import model sm
+
+import model heft_v4
+
+# Define multiparticle labels
+
+define p = g u c d s u~ c~ d~ s~
+
+define j = g u c d s u~ c~ d~ s~
+
+define l+ = e+ mu+
+
+define l- = e- mu-
+
+define vl = ve vm vt
+
+define vl~ = ve~ vm~ vt~
+# Specify process(es) to run
+generate p p > h QED=0 QCD=99 HIG=1
+# Output processes to MadEvent directory
+output -f`
