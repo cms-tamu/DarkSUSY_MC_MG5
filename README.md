@@ -1,8 +1,8 @@
 # DarkSUSY MC three dimuons final state 
 
 ## Download the MAdGraph5 package
-
-    https://launchpad.net/mg5amcnlo
+   
+   https://launchpad.net/mg5amcnlo
 
 ## Create a directory in lxplus and upload the package to the directory
 
@@ -15,7 +15,7 @@
     tar -xzf MG5_aMC_v2.5.5.tar.gz
 
 ## Make clean copy of the Template
-    `cp -r Template pp_to_Higgs_HEFT_Model`
+    cp -r Template pp_to_Higgs_HEFT_Model
 
 ## Set up process pp -> Higgs through a top loop(QED=0 QCD=99)
 
