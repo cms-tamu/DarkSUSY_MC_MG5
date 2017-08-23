@@ -18,7 +18,7 @@
 
 Go to the folder "MG5_aMC_v2_5_5". Edit the file `Template/LO/Cards/proc_card_mg5.dat` to be same as:
 
-    import model_v4 heft_v4
+    import model heft
     # Define multiparticle labels
     define p = g u c d s u~ c~ d~ s~
     define j = g u c d s u~ c~ d~ s~
