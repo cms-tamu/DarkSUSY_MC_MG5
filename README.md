@@ -18,7 +18,7 @@
 
 Go to the folder "MG5_aMC_v2_5_5". Edit the file `Template/LO/Cards/proc_card_mg5.dat` to be same as:
 
-    import model heft_v4
+    import model_v4 heft_v4
     # Define multiparticle labels
     define p = g u c d s u~ c~ d~ s~
     define j = g u c d s u~ c~ d~ s~
@@ -36,9 +36,14 @@ Run `./MG5_aMC_v2_5_5/bin/mg5_aMC Template/LO/Cards/proc_card_mg5.dat` and a fol
 
 Use `firefox pp_to_Higgs_HEFT_Model/index.html` to check the specified process.
 
-Specify the model parameters `cd MG5_aMC_v2_5_5/bin/pp_to_Higgs_HEFT_Model/Cards/` and change the Higgs mass to
+Specify the model parameters `vi MG5_aMC_v2_5_5/bin/pp_to_Higgs_HEFT_Model/Cards/param_card.dat` and change the Higgs mass to
 
     25     1.25000000E+02   # H        mass
+    
+Change the PDF in `run_card.dat` to have the PDF sets automatically added to the run_card at run time:
+
+`lhapdf = pdlabel ! PDF set`
+`$DEFAULT_PDF_SETS = lhaid`
 
 ## Generate unweighted events
 
