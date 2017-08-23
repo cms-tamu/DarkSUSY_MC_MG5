@@ -16,7 +16,7 @@
 
 ## Set up process pp -> Higgs through a top loop(QED=0 QCD=99)
 
-Go to the folder "MG5_aMC_v2_5_5". Edit the file `Template/LO/Cards/proc_card_mg5.dat` to be same as:
+Go to the folder "MG5_aMC_v2_5_5". Edit the file `proc_card.dat` to be same as:
 
     import model heft
     # Define multiparticle labels
@@ -32,7 +32,7 @@ Go to the folder "MG5_aMC_v2_5_5". Edit the file `Template/LO/Cards/proc_card_mg
     output pp_to_Higgs_HEFT_Model -nojpeg
 
 ## Setup the specified process
-Run `./MG5_aMC_v2_5_5/bin/mg5_aMC Template/LO/Cards/proc_card_mg5.dat` and a folder called "pp_to_Higgs_HEFT_Model" will be generated. 
+Run `./MG5_aMC_v2_5_5/bin/mg5_aMC proc_card.dat` and a folder called "pp_to_Higgs_HEFT_Model" will be generated. 
 
 Use `firefox pp_to_Higgs_HEFT_Model/index.html` to check the specified process.
 
