@@ -47,11 +47,11 @@ Change the PDF in `run_card.dat` to have the PDF sets automatically added to the
 
 ## Generate unweighted events
 
-`cd /MadGraph5/MG5_aMC_v2_5_5/bin/PROC_heft_v4_0/bin`
+`cd /MadGraph5/MG5_aMC_v2_5_5/pp_to_Higgs_HEFT_Model/bin`
 
 `./generate_events`
 
-The lhe.gz file along with a txt setting file will be generated under `MG5_aMC_v2_5_5/bin/pp_to_Higgs_HEFT_Model/Events` directory.
+The lhe.gz file along with a txt setting file will be generated under `MG5_aMC_v2_5_5/pp_to_Higgs_HEFT_Model/Events` directory.
 
 Unzip the file to get the .lhe file:
 
