@@ -36,15 +36,6 @@ Run `./MG5_aMC_v2_5_5/bin/mg5_aMC proc_card.dat` and a folder called "pp_to_Higg
 
 Use `firefox pp_to_Higgs_HEFT_Model/index.html` to check the specified process.
 
-Specify the model parameters `vi MG5_aMC_v2_5_5/bin/pp_to_Higgs_HEFT_Model/Cards/param_card.dat` and change the Higgs mass to
-
-    25     1.25000000E+02   # H        mass
-    
-Change the PDF in `run_card.dat` to have the PDF sets automatically added to the run_card at run time:
-
-`lhapdf = pdlabel ! PDF set`
-`$DEFAULT_PDF_SETS = lhaid`
-
 ## Generate unweighted events
 
 `cd /MadGraph5/MG5_aMC_v2_5_5/pp_to_Higgs_HEFT_Model/bin`
