@@ -260,7 +260,7 @@ n1 = Particle(pdg_code = 3000001,
               spin = 2,
               color = 1,
               mass = Param.MN1,
-              width = Param.WN1,
+              width = Param.ZERO,
               texname = 'n1',
               antitexname = 'n1',
               charge = 0)
