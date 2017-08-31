@@ -67,35 +67,35 @@ e__minus__ = Particle(pdg_code = 11,
 
 e__plus__ = e__minus__.anti()
 
-m__minus__ = Particle(pdg_code = 13,
-                      name = 'm-',
-                      antiname = 'm+',
+mu__minus__ = Particle(pdg_code = 13,
+                      name = 'mu-',
+                      antiname = 'mu+',
                       spin = 2,
                       color = 1,
                       mass = Param.ZERO,
                       width = Param.ZERO,
-                      texname = 'm-',
-                      antitexname = 'm-',
+                      texname = 'mu-',
+                      antitexname = 'mu-',
                       charge = -1,
                       LeptonNumber = 1,
                       GhostNumber = 0)
 
-m__plus__ = m__minus__.anti()
+mu__plus__ = mu__minus__.anti()
 
-tt__minus__ = Particle(pdg_code = 15,
-                       name = 'tt-',
-                       antiname = 'tt+',
+ta__minus__ = Particle(pdg_code = 15,
+                       name = 'ta-',
+                       antiname = 'ta+',
                        spin = 2,
                        color = 1,
                        mass = Param.MTA,
                        width = Param.ZERO,
-                       texname = 'tt-',
-                       antitexname = 'tt-',
+                       texname = 'ta-',
+                       antitexname = 'ta-',
                        charge = -1,
                        LeptonNumber = 1,
                        GhostNumber = 0)
 
-tt__plus__ = tt__minus__.anti()
+ta__plus__ = ta__minus__.anti()
 
 u = Particle(pdg_code = 2,
              name = 'u',
