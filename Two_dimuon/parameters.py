@@ -188,10 +188,26 @@ WW = Parameter(name = 'WW',
 WH = Parameter(name = 'WH',
                nature = 'external',
                type = 'real',
-               value =  2.373296e-01,
+               value =  1,
                texname = '\\text{WH}',
                lhablock = 'DECAY',
                lhacode = [ 25 ])
+
+WN2 = Parameter(name = 'WN2',
+               nature = 'external',
+               type = 'real',
+               value =  1,
+               texname = '\\text{WN2}',
+               lhablock = 'DECAY',
+               lhacode = [ 3000002 ])
+
+WZD = Parameter(name = 'WZD',
+               nature = 'external',
+               type = 'real',
+               value =  1,
+               texname = '\\text{WZD}',
+               lhablock = 'DECAY',
+               lhacode = [ 3000022 ])
 
 CKM11 = Parameter(name = 'CKM11',
                   nature = 'internal',
