@@ -309,3 +309,7 @@ V_76 = Vertex(name = 'V_76',
               lorentz = [ L.FFV2 ],
               couplings = {(0,0):C.GC_28})
 
+V_80 = Vertex(name = 'V_80',
+              particles = [P.n2, P.n2, P.h],
+              color = [],
+              lorentz)
