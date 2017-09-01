@@ -232,3 +232,45 @@ aEW = Parameter(name = 'aEW',
                 type = 'real',
                 value = '1/aEWM1',
                 texname = '\\text{aEW}')
+
+ee = Parameter(name = 'ee',
+               nature = 'internal',
+               type = 'real',
+               value = '2*cmath.sqrt(aEW)*cmath.sqrt(cmath.pi)',
+               texname = 'e')
+
+sw2 = Parameter(name = 'sw2',
+                nature = 'internal',
+                type = 'real',
+                value = '1 - MW**2/MZ**2',
+                texname = '\\text{sw2}')
+
+cw = Parameter(name = 'cw',
+               nature = 'internal',
+               type = 'real',
+               value = 'cmath.sqrt(1 - sw2)',
+               texname = 'c_w')
+
+sw = Parameter(name = 'sw',
+               nature = 'internal',
+               type = 'real',
+               value = 'cmath.sqrt(sw2)',
+               texname = 's_w')
+
+gw = Parameter(name = 'gw',
+               nature = 'internal',
+               type = 'real',
+               value = 'ee/sw',
+               texname = 'g_w')
+
+v = Parameter(name = 'v',
+              nature = 'internal',
+              type = 'real',
+              value = '(2*MW*sw)/ee',
+              texname = 'v')
+
+lam = Parameter(name = 'lam',
+                nature = 'internal',
+                type = 'real',
+                value = 'MH**2/(2.*v**2)',
+                texname = '\\text{lam}')
