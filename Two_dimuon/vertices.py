@@ -311,18 +311,18 @@ V_76 = Vertex(name = 'V_76',
 
 V_80 = Vertex(name = 'V_80',
               particles = [P.n2, P.n2, P.h],
-              color = [],
-              lorentz = [L.FFS1],
+              color = [ '1' ],
+              lorentz = [L.FFS2],
               couplings = {})
 
 V_81 = Vertex(name = 'V_81',
               particles = [P.zd, P.n1, P.n2],
-              color = [],
+              color = [ '1' ],
               lorentz = [L.VFF1],
               couplings = {})
 
 V_82 = Vertex(name = 'V_82',
               particles = [P.mu__minus__, P.mu__plus__, P.zd],
-              color = [],
-              lorentz = [L.FFV1],
+              color = [ '1' ],
+              lorentz = [L.FFV6],
               couplings = {})
