@@ -215,6 +215,18 @@ CKM11 = Parameter(name = 'CKM11',
                   value = '0.974',
                   texname = '\\text{CKM11}')
 
+CKM22 = Parameter(name = 'CKM22',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = '0.973',
+                  texname = '\\text{CKM22}')
+
+CKM33 = Parameter(name = 'CKM33',
+                  nature = 'internal',
+                  type = 'complex',
+                  value = '0.999',
+                  texname = '\\text{CKM33}')
+
 aEW = Parameter(name = 'aEW',
                 nature = 'internal',
                 type = 'real',
