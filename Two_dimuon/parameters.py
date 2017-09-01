@@ -233,6 +233,12 @@ aEW = Parameter(name = 'aEW',
                 value = '1/aEWM1',
                 texname = '\\text{aEW}')
 
+G = Parameter(name = 'G',
+              nature = 'internal',
+              type = 'real',
+              value = '2*cmath.sqrt(aS)*cmath.sqrt(cmath.pi)',
+              texname = 'G')
+
 ee = Parameter(name = 'ee',
                nature = 'internal',
                type = 'real',
