@@ -324,5 +324,5 @@ V_81 = Vertex(name = 'V_81',
 V_82 = Vertex(name = 'V_82',
               particles = [P.mu__minus__, P.mu__plus__, P.zd],
               color = [ '1' ],
-              lorentz = [L.FFV6],
+              lorentz = [L.FFV1],
               couplings = {(0,0):C.GC_63})
