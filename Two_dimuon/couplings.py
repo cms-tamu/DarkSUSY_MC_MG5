@@ -117,3 +117,14 @@ GC_50 = Coupling(name = 'GC_50',
                  value = '(ee*complex(0,1)*complexconjugate(CKM33))/(sw*cmath.sqrt(2))',
                  order = {'QED':1})
 
+GC_61 = Coupling(name = 'GC_61',
+                 value = 'complex(0,0.001)',
+                 order = {'QED':1})
+
+GC_62 = Coupling(name = 'GC_62',
+                 value = 'complex(0,0.001)',
+                 order = {'QED':1})
+
+GC_63 = Coupling(name = 'GC_63',
+                 value = 'complex(0,0.001)',
+                 order = {'QED':1})
