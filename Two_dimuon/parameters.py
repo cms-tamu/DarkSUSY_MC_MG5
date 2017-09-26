@@ -73,18 +73,10 @@ ymtau = Parameter(name = 'ymtau',
                   lhablock = 'YUKAWA',
                   lhacode = [ 15 ])
 
-MC = Parameter(name = 'MC',
-               nature = 'external',
-               type = 'real',
-               value = 1.27,
-               texname = '\\text{MC}',
-               lhablock = 'MASS',
-               lhacode = [ 4 ])
-
 MB = Parameter(name = 'MB',
                nature = 'external',
                type = 'real',
-               value = 4.18,
+               value = 4.20,
                texname = '\\text{MB}',
                lhablock = 'MASS',
                lhacode = [ 5 ])
@@ -108,7 +100,7 @@ MTA = Parameter(name = 'MTA',
 MZ = Parameter(name = 'MZ',
                nature = 'external',
                type = 'real',
-               value = 91.188,
+               value = 91.5445065,
                texname = '\\text{MZ}',
                lhablock = 'MASS',
                lhacode = [ 23 ])
@@ -116,7 +108,7 @@ MZ = Parameter(name = 'MZ',
 MW = Parameter(name = 'MW',
                nature = 'external',
                type = 'real',
-               value = 80.385,
+               value = 80.2673592,
                texname = '\\text{MW}',
                lhablock = 'MASS',
                lhacode = [ 24 ])
