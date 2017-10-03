@@ -37,6 +37,10 @@ FFV5 = Lorentz(name = 'FFV5',
                spins = [ 2, 2, 3 ],
                structure = 'Gamma(3,2,-1)*ProjM(-1,1) + 4*Gamma(3,2,-1)*ProjP(-1,1)')
 
+VFF1 = Lorentz(name = 'VFF1',
+               spins = [ 3, 2, 2 ],
+               structure = 'Gamma(3,2,1)')
+
 VVS1 = Lorentz(name = 'VVS1',
                spins = [ 3, 3, 1 ],
                structure = 'Metric(1,2)')
