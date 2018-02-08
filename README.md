@@ -27,7 +27,7 @@ Go to the folder "MG5_aMC_v2_5_5". Edit the file `proc_card.dat` to be same as:
     define vl = ve vm vt
     define vl~ = ve~ vm~ vt~
     # Specify process(es) to run
-    generate p p > h QED=0 QCD=99 HIG=1, h > n2 n2, n2 > n1 zd, zd -> mu- mu+
+    generate p p > h QED=0 QCD=99 HIG=1, h > n2 n2, n2 > n1 zd, zd > mu- mu+
     # Output processes to MadEvent directory
     output pp_to_Higgs_HEFT_Model -nojpeg
 
