@@ -28,6 +28,8 @@ FeynmanGauge = True;
 (* ************************** *)
 M$GaugeGroups = {
   U1Y  == { Abelian->True,  CouplingConstant->gp, Superfield->BSF, Charge->Y, GUTNormalization->3/5},
+  (* Add U(1)D for new gauge boson *)
+  U1D  == { Abelian->True,  CouplingConstant->gd},
   SU2L == { Abelian->False, CouplingConstant->gw, Superfield->WSF, 
             StructureConstant->ep, Representations->{Ta,SU2D}, Definitions->{Ta[a__]->PauliSigma[a]/2, ep->Eps}},
   SU3C == { Abelian->False, CouplingConstant->gs, Superfield->GSF,
