@@ -1,4 +1,4 @@
-# DarkSUSY MC three dimuons final state 
+# DarkSUSY MC MG5
 
 ## Create a directory in lxplus and upload the package to the directory
 
