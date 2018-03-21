@@ -341,7 +341,9 @@ M$Parameters = {
           Description->"Hypercharge coupling constant at the Z pole"},
   gw == { TeX->Subscript[g,w], ParameterType->Internal, ComplexParameter->False, Definitions-> {gw->ee/sw}, InteractionOrder->{QED,1},
           Description->"Weak coupling constant at the Z pole"},
-
+  (* Add gd coupling definition *)   
+  gd == { TeX->Subscript[g,d], ParameterType->External, InteractionOrder->{NP, 1}, BlockName->DMINPUTS,  Description->"U1D coupling", Value -> 1. }, 
+  
 (* Higgs sector: external parameters *)
   tb == { TeX->Subscript[t,b], ParameterType->External, ComplexParameter->False, BlockName->HMIX, OrderBlock->2, Description->"Ratio of the two Higgs vevs"},
 
