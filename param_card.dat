@@ -51,6 +51,12 @@ Block yukawa
     5 4.200000e+00  # ymb 
     6 1.645000e+02  # ymt 
    15 1.777000e+00  # ymtau 
+ 
+###################################
+## INFORMATION FOR CKM
+###################################
+Block ckm
+    1   1     9.750000e-01   # Vud for Cabibbo matrix  
 
 ###################################
 ## INFORMATION FOR DECAY
