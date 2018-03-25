@@ -14,7 +14,7 @@
 
 `tar -xzf MG5_aMC_v2.5.5.tar.gz`
 
-## Set up process pp -> Higgs through a top loop(QED=0 QCD=99)
+## Set up process pp -> Higgs through a top loop
 
 Go to the folder "MG5_aMC_v2_5_5". Edit the file `proc_card.dat` to be same as:
 
@@ -31,12 +31,18 @@ Go to the folder "MG5_aMC_v2_5_5". Edit the file `proc_card.dat` to be same as:
     # Output processes to MadEvent directory
     output pp_to_Higgs_HEFT_Model -nojpeg
 
-## Setup the specified process
+## Check the process
 Run `./MG5_aMC_v2_5_5/bin/mg5_aMC proc_card.dat` and a folder called "pp_to_Higgs_HEFT_Model" will be generated. 
 
 Use `firefox pp_to_Higgs_HEFT_Model/index.html` to check the specified process.
 
-## Generate unweighted events
+## Edit Higgs mass
+The model parameters include masses and widths for particles and coupling constants. They are defined in file param_card.dat in the pp_to_Higgs_HEFT_Model/Cards folder.
+
+In our case adjust mass of Higgs to 125 GeV:
+`25     1.25000000E+02   # H        mass`
+
+## Generate Higgs unweighted events in MG5
 
 `cd /MadGraph5/MG5_aMC_v2_5_5/pp_to_Higgs_HEFT_Model/bin`
 
@@ -47,3 +53,5 @@ The lhe.gz file along with a txt setting file will be generated under `MG5_aMC_v
 Unzip the file to get the .lhe file:
 
 `gunzip -d *.lhe.gz`
+
+Repeat generation for other masses of Higgs by editing the higgs mass in param_card.dat.
