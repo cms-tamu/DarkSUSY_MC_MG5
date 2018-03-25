@@ -39,6 +39,8 @@ M$GaugeGroups = {
 (* ************************** *)
 (* *** Interaction orders *** *)
 (* ************************** *)
+(* Add New Physics order limit, 4 NP vertexes *)
+M$InteractionOrderLimit = { {NP, 4} };
 M$InteractionOrderHierarchy = { {QCD, 1}, {QED, 2} };
 
 
