@@ -40,6 +40,7 @@ Use `firefox pp_to_Higgs_HEFT_Model/index.html` to check the specified process.
 The model parameters include masses and widths for particles and coupling constants. They are defined in file param_card.dat in the pp_to_Higgs_HEFT_Model/Cards folder.
 
 In our case adjust mass of Higgs to 125 GeV:
+
 `25     1.25000000E+02   # H        mass`
 
 ## Generate Higgs unweighted events in MG5
