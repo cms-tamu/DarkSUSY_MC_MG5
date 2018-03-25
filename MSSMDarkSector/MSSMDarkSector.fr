@@ -333,16 +333,12 @@ M$Parameters = {
              Description->"Strong coupling constant at the Z pole."},
 
 (* Couplings constants: internal parameters *)
-  ee == { TeX->e,              ParameterType->Internal, ComplexParameter->False, Value->Sqrt[4 Pi / aEWM1], InteractionOrder->{QED,1}, 
-          Description->"Electric coupling constant"},
-  gs == { TeX->Subscript[g,s], ParameterType->Internal, ComplexParameter->False, Value->Sqrt[4 Pi aS],      InteractionOrder->{QCD,1}, ParameterName->G, 
-          Description->"Strong coupling constant"},
-  gp == { TeX->g',             ParameterType->Internal, ComplexParameter->False, Definitions-> {gp->ee/cw}, InteractionOrder->{QED,1},
-          Description->"Hypercharge coupling constant at the Z pole"},
-  gw == { TeX->Subscript[g,w], ParameterType->Internal, ComplexParameter->False, Definitions-> {gw->ee/sw}, InteractionOrder->{QED,1},
-          Description->"Weak coupling constant at the Z pole"},
+  ee == { TeX->e, ParameterType->Internal, ComplexParameter->False, Value->Sqrt[4 Pi / aEWM1], InteractionOrder->{QED,1}, Description->"Electric coupling constant"},
+  gs == { TeX->Subscript[g,s], ParameterType->Internal, ComplexParameter->False, Value->Sqrt[4 Pi aS],      InteractionOrder->{QCD,1}, ParameterName->G, Description->"Strong coupling constant"},
+  gp == { TeX->g', ParameterType->Internal, ComplexParameter->False, Definitions-> {gp->ee/cw}, InteractionOrder->{QED,1}, Description->"Hypercharge coupling constant at the Z pole"},
+  gw == { TeX->Subscript[g,w], ParameterType->Internal, ComplexParameter->False, Definitions-> {gw->ee/sw}, InteractionOrder->{QED,1}, Description->"Weak coupling constant at the Z pole"},
   (* Add gd coupling definition *)   
-  gd == { TeX->Subscript[g,d], ParameterType->External, InteractionOrder->{NP, 1}, BlockName->DMINPUTS,  Description->"U1D coupling", Value -> 0.001 }, 
+  gd == { TeX->Subscript[g,d], ParameterType->External, ComplexParameter->False, Value -> 0.001, InteractionOrder->{NP, 1},  Description->"U1D coupling"}, 
   
 (* Higgs sector: external parameters *)
   tb == { TeX->Subscript[t,b], ParameterType->External, ComplexParameter->False, BlockName->HMIX, OrderBlock->2, Description->"Ratio of the two Higgs vevs"},
