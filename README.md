@@ -20,14 +20,14 @@ Go to the folder "MG5_aMC_v2_5_5". Edit the file `proc_card.dat` to be same as:
 
     import model heft
     # Define multiparticle labels
-    define p = g u c d s u~ c~ d~ s~
-    define j = g u c d s u~ c~ d~ s~
+    define p = u u~ c c~ d d~ s s~ g
+    define j = u u~ c c~ d d~ s s~ g
     define l+ = e+ mu+
     define l- = e- mu-
-    define vl = ve vm vt
-    define vl~ = ve~ vm~ vt~
+    define vl = ve vm
+    define vl~ = ve~ vm~
     # Specify process(es) to run
-    generate p p > h QED=0 QCD=99 HIG=1, h > n2 n2, n2 > n1 zd, zd > mu- mu+
+    generate p p > h QED=0 QCD=99 HIG=1
     # Output processes to MadEvent directory
     output pp_to_Higgs_HEFT_Model -nojpeg
 
