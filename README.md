@@ -56,3 +56,5 @@ Unzip the file to get the .lhe file:
 `gunzip -d *.lhe.gz`
 
 Repeat generation for other masses of Higgs by editing the higgs mass in param_card.dat.
+
+## Decay the Higgs
