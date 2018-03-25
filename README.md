@@ -37,7 +37,7 @@ Run `./MG5_aMC_v2_5_5/bin/mg5_aMC proc_card.dat` and a folder called "pp_to_Higg
 Use `firefox pp_to_Higgs_HEFT_Model/index.html` to check the specified process.
 
 ## Edit model parameters
-The model parameters include masses and widths for particles and coupling constants. They are defined in file param_card.dat in the pp_to_Higgs_HEFT_Model/Cards folder. Make sure it is same as [this one] (https://github.com/weishi10141993/DarkSUSY_MC_MadGraph5_aMC-NLO/blob/master/param_card.dat)
+The model parameters include masses and widths for particles and coupling constants. They are defined in file param_card.dat in the pp_to_Higgs_HEFT_Model/Cards folder. Make sure it is same as [this](https://github.com/weishi10141993/DarkSUSY_MC_MadGraph5_aMC-NLO/blob/master/param_card.dat)
 
 In our case the default mass of Higgs is 125 GeV, can change to other masses:
 
