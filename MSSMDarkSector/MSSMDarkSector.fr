@@ -93,7 +93,7 @@ M$ClassesDescription = {
   V[4] == { ClassName->G, SelfConjugate->True, Indices->{Index[Gluon]}, Mass->0, Width->0, ParticleName->"g", 
             PDG->21, PropagatorLabel->"G", PropagatorType->C,    PropagatorArrow->None },
 (* Add physics field for dark photon *)            
-  V[5] == { ClassName->AD, SelfConjugate->True,  Mass->{MAD},  Width->{WAD},  ParticleName->"ad", 
+  V[5] == { ClassName->AD, SelfConjugate->True,  Mass->MAD,  Width->WAD,  ParticleName->"ad", 
             PDG->3000022, PropagatorLabel->"AD", PropagatorType->Sine, PropagatorArrow->None},
 
 (* Gauginos: unphysical Weyls *)
