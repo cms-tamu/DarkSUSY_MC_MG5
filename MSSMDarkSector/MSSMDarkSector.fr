@@ -132,9 +132,8 @@ M$ClassesDescription = {
             ClassMembers->{ch1,ch2}, Mass->{Mch,Mch1,Mch2}, Width->{Wch,Wch1,Wch2},
             PDG->{1000024,1000037}, PropagatorLabel->{"ch","ch1","ch2"}, PropagatorType->Straight, PropagatorArrow->Forward },
   F[3] == { ClassName->go,  SelfConjugate->True, Indices->{Index[Gluon]}, WeylComponents->goww, Mass->Mgo, Width->Wgo, ParticleName->"go",
-            PDG->1000021, PropagatorLabel->"go", PropagatorType->Straight, PropagatorArrow->None },
-            
-(* Add physics field for dark neutralino decaying from n1*)
+            PDG->1000021, PropagatorLabel->"go", PropagatorType->Straight, PropagatorArrow->None },          
+(* Add physics field for dark neutralino decaying from n1 *)
   F[8] == { ClassName->neuD, SelfConjugate->True, ParticleName->"nD", Mass->MneuD, Width->WneuD, 
             PDG->3000001, PropagatorLabel->"neuD", PropagatorType->Straight, PropagatorArrow->None },
 
