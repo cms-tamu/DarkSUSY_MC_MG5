@@ -570,4 +570,4 @@ LN1NDAD := [Neu,1]*Ga[mu]*gd*nD*AD[mu];
 LADMuMu := lbar[,2]*Ga[mu]*gd*l[,2]*AD[mu];
 
 (* Collecting all the pieces together *)
-Lag := ToDirac[SolveEqMotionF[SolveEqMotionD[LVector+LChiral+LSuperW+LSoft]]] + LFeynmanGFix ;
+Lag := ToDirac[SolveEqMotionF[SolveEqMotionD[LVector+LChiral+LSuperW+LSoft]]] + LFeynmanGFix + LN1NDAD + LADMuMu;
