@@ -29,7 +29,7 @@ FeynmanGauge = True;
 M$GaugeGroups = {
   U1Y  == { Abelian->True,  CouplingConstant->gp, Superfield->BSF, Charge->Y, GUTNormalization->3/5},
   (* Add U(1)D for new gauge boson *)
-  U1D  == { Abelian->True,  CouplingConstant->gd},
+  U1D  == { Abelian->True,  CouplingConstant->gd, Superfield->DSF, Charge->D},
   SU2L == { Abelian->False, CouplingConstant->gw, Superfield->WSF, 
             StructureConstant->ep, Representations->{Ta,SU2D}, Definitions->{Ta[a__]->PauliSigma[a]/2, ep->Eps}},
   SU3C == { Abelian->False, CouplingConstant->gs, Superfield->GSF,
@@ -63,6 +63,8 @@ M$Superfields = {
   VSF[1] == { ClassName->BSF, GaugeBoson->B,  Gaugino->bow}, 
   VSF[2] == { ClassName->WSF, GaugeBoson->Wi, Gaugino->wow, Indices->{Index[SU2W]}},
   VSF[3] == { ClassName->GSF, GaugeBoson->G,  Gaugino->gow, Indices->{Index[Gluon] }},
+  (* Add a gauge boson for U1D *)
+  VSF[4] == { ClassName->BSF, GaugeBoson->AD},
   CSF[1] == { ClassName->HU, Chirality->Left, Weyl->huw, Scalar->hus, QuantumNumbers->{Y-> 1/2}, Indices->{Index[SU2D]}},
   CSF[2] == { ClassName->HD, Chirality->Left, Weyl->hdw, Scalar->hds, QuantumNumbers->{Y->-1/2}, Indices->{Index[SU2D]}},
   CSF[3] == { ClassName->LL, Chirality->Left, Weyl->LLw, Scalar->LLs, QuantumNumbers->{Y->-1/2}, Indices->{Index[SU2D], Index[GEN]}},
