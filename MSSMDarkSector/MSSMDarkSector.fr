@@ -135,7 +135,7 @@ M$ClassesDescription = {
             PDG->1000021, PropagatorLabel->"go", PropagatorType->Straight, PropagatorArrow->None },
             
 (* Add physics field for dark neutralino decaying from n1*)
-  F[4] == { ClassName->neuD, SelfConjugate->True, ParticleName->"nD", Mass->MneuD, Width->WneuD, 
+  F[8] == { ClassName->neuD, SelfConjugate->True, ParticleName->"nD", Mass->MneuD, Width->WneuD, 
             PDG->3000001, PropagatorLabel->"neuD", PropagatorType->Straight, PropagatorArrow->None },
 
 (* Higgs: unphysical scalars  *)
