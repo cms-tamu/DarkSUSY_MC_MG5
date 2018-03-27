@@ -564,5 +564,10 @@ LFeynmanGFix := Module[{VectorizeU,VectorizeD, Phiu,Phid,Phiu0,Phid0, phid1,phid
   LGh = ExpandIndices[LGh1+LGh2+LGh3+LGhS, FlavorExpand->SU2W] /.nrules; 
 LGF+LGh];
 
+(* Add new physics n1-nD-ad *)
+LN1NDAD := [Neu,1]*Ga[mu]*gd*nD*AD[mu];
+(* Add new vertex ad-mu-mu *)
+LADMuMu := lbar[,2]*Ga[mu]*gd*l[,2]*AD[mu];
+
 (* Collecting all the pieces together *)
 Lag := ToDirac[SolveEqMotionF[SolveEqMotionD[LVector+LChiral+LSuperW+LSoft]]] + LFeynmanGFix ;
