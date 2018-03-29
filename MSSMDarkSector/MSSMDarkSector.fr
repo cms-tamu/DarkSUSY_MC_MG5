@@ -63,6 +63,8 @@ M$Superfields = {
   VSF[1] == { ClassName->BSF, GaugeBoson->B,  Gaugino->bow}, 
   VSF[2] == { ClassName->WSF, GaugeBoson->Wi, Gaugino->wow, Indices->{Index[SU2W]}},
   VSF[3] == { ClassName->GSF, GaugeBoson->G,  Gaugino->gow, Indices->{Index[Gluon]}},
+  (* Add a gauge boson for U1D *)
+  VSF[4] == { ClassName->XSF, GaugeBoson->AD},
   CSF[1] == { ClassName->HU, Chirality->Left, Weyl->huw, Scalar->hus, QuantumNumbers->{Y-> 1/2}, Indices->{Index[SU2D]}},
   CSF[2] == { ClassName->HD, Chirality->Left, Weyl->hdw, Scalar->hds, QuantumNumbers->{Y->-1/2}, Indices->{Index[SU2D]}},
   CSF[3] == { ClassName->LL, Chirality->Left, Weyl->LLw, Scalar->LLs, QuantumNumbers->{Y->-1/2}, Indices->{Index[SU2D], Index[GEN]}},
