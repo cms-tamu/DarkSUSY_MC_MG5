@@ -48,7 +48,7 @@ M$InteractionOrderHierarchy = { {QCD, 0}, {NP, 4}, {QED, 5} };
 (* *****    Indices     ***** *)
 (* ************************** *)
 IndexRange[Index[SU2W]] =   Unfold[Range[3]]; IndexStyle[SU2W,j];  IndexRange[Index[SU2D]] =   Unfold[Range[2]]; IndexStyle[SU2D,k];
-IndexRange[Index[Gluon ]] = NoUnfold[Range[8]]; IndexStyle[Gluon, a];  IndexRange[Index[Colour ]] = NoUnfold[Range[3]]; IndexStyle[Colour, m]; 
+IndexRange[Index[Gluon ]] = NoUnfold[Range[8]]; IndexStyle[Gluon, a];  IndexRange[Index[Colour]] = NoUnfold[Range[3]]; IndexStyle[Colour, m]; 
 IndexRange[Index[Colourb]] = NoUnfold[Range[3]]; IndexStyle[Colourb,m];
 IndexRange[Index[NEU ]] = Range[4];           IndexStyle[NEU, i];
 IndexRange[Index[CHA ]] = Range[2];           IndexStyle[CHA, i];
@@ -62,15 +62,15 @@ IndexRange[Index[SCA ]] = Range[6];           IndexStyle[SCA, i];
 M$Superfields = {
   VSF[1] == { ClassName->BSF, GaugeBoson->B,  Gaugino->bow}, 
   VSF[2] == { ClassName->WSF, GaugeBoson->Wi, Gaugino->wow, Indices->{Index[SU2W]}},
-  VSF[3] == { ClassName->GSF, GaugeBoson->G,  Gaugino->gow, Indices->{Index[Gluon] }},
+  VSF[3] == { ClassName->GSF, GaugeBoson->G,  Gaugino->gow, Indices->{Index[Gluon]}},
   CSF[1] == { ClassName->HU, Chirality->Left, Weyl->huw, Scalar->hus, QuantumNumbers->{Y-> 1/2}, Indices->{Index[SU2D]}},
   CSF[2] == { ClassName->HD, Chirality->Left, Weyl->hdw, Scalar->hds, QuantumNumbers->{Y->-1/2}, Indices->{Index[SU2D]}},
   CSF[3] == { ClassName->LL, Chirality->Left, Weyl->LLw, Scalar->LLs, QuantumNumbers->{Y->-1/2}, Indices->{Index[SU2D], Index[GEN]}},
   CSF[4] == { ClassName->ER, Chirality->Left, Weyl->ERw, Scalar->ERs, QuantumNumbers->{Y-> 1},   Indices->{Index[GEN]}},
   CSF[5] == { ClassName->VR, Chirality->Left, Weyl->VRw, Scalar->VRs, Indices->{Index[GEN]}},
   CSF[6] == { ClassName->QL, Chirality->Left, Weyl->QLw, Scalar->QLs, QuantumNumbers->{Y-> 1/6}, Indices->{Index[SU2D], Index[GEN], Index[Colour]}},
-  CSF[7] == { ClassName->UR, Chirality->Left, Weyl->URw, Scalar->URs, QuantumNumbers->{Y->-2/3}, Indices->{Index[GEN], Index[Colourb]}           },
-  CSF[8] == { ClassName->DR, Chirality->Left, Weyl->DRw, Scalar->DRs, QuantumNumbers->{Y-> 1/3}, Indices->{Index[GEN], Index[Colourb]}           }
+  CSF[7] == { ClassName->UR, Chirality->Left, Weyl->URw, Scalar->URs, QuantumNumbers->{Y->-2/3}, Indices->{Index[GEN], Index[Colourb]}},
+  CSF[8] == { ClassName->DR, Chirality->Left, Weyl->DRw, Scalar->DRs, QuantumNumbers->{Y-> 1/3}, Indices->{Index[GEN], Index[Colourb]}}
 };
 
 (* ************************** *)
