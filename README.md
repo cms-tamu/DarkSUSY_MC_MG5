@@ -8,15 +8,15 @@
 
 ## Download the MAdGraph5 package
 
-`cp /afs/cern.ch/cms/generators/www/MG5_aMC_v2.5.5.tar.gz ./`
+`cp /afs/cern.ch/cms/generators/www/MG5_aMC_v2.6.1.tar.gz ./`
 
 ## Unzip the package and a folder "MG5_aMC_v2_5_5" will be created
 
-`tar -xzf MG5_aMC_v2.5.5.tar.gz`
+`tar -xzf MG5_aMC_v2.6.1.tar.gz`
 
 ## Set up process pp -> Higgs through a top loop
 
-Go to the folder "MG5_aMC_v2_5_5". Edit the file `proc_card.dat` to be same as:
+Go to the folder "MG5_aMC_v2_6_1". Edit the file `proc_card.dat` to be same as:
 
     import model heft
     # Define multiparticle labels
@@ -32,7 +32,7 @@ Go to the folder "MG5_aMC_v2_5_5". Edit the file `proc_card.dat` to be same as:
     output pp_to_Higgs_HEFT_Model -nojpeg
 
 ## Check the process
-Run `./MG5_aMC_v2_5_5/bin/mg5_aMC proc_card.dat` and a folder called "pp_to_Higgs_HEFT_Model" will be generated. 
+Run `./MG5_aMC_v2_6_1/bin/mg5_aMC proc_card.dat` and a folder called "pp_to_Higgs_HEFT_Model" will be generated. 
 
 Use `firefox pp_to_Higgs_HEFT_Model/index.html` to check the specified process.
 
@@ -45,11 +45,11 @@ In our case the default mass of Higgs is 125 GeV, can change to other masses:
 
 ## Generate Higgs unweighted events in MG5
 
-`cd /MadGraph5/MG5_aMC_v2_5_5/pp_to_Higgs_HEFT_Model/bin`
+`cd /MadGraph5/MG5_aMC_v2_6_1/pp_to_Higgs_HEFT_Model/bin`
 
 `./generate_events`
 
-The lhe.gz file along with a txt setting file will be generated under `MG5_aMC_v2_5_5/pp_to_Higgs_HEFT_Model/Events` directory.
+The lhe.gz file along with a txt setting file will be generated under `MG5_aMC_v2_6_1/pp_to_Higgs_HEFT_Model/Events` directory.
 
 Unzip the file to get the .lhe file:
 
