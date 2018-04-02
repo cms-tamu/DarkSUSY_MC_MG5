@@ -21,7 +21,7 @@ M$Information = { Authors->{"Wei Shi"}, Emails->{"weishi@rice.edu"}, Institution
 $CKMDiag = False;   (* CKM  = identity or not *)
 $MNSDiag = True;   (* PMNS = identity or not *)
 FeynmanGauge = True;
-
+QX=0; (* Charge from U1D *)
 
 (* ************************** *)
 (* *****  Gauge groups  ***** *)
