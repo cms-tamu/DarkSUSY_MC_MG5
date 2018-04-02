@@ -21,7 +21,7 @@ M$Information = { Authors->{"Wei Shi"}, Emails->{"weishi@rice.edu"}, Institution
 $CKMDiag = False;   (* CKM  = identity or not *)
 $MNSDiag = True;   (* PMNS = identity or not *)
 FeynmanGauge = True;
-X=1;  (* The charge X of the U1D is a free parameter *)
+QX=1;  (* The charge X of the U1D is a free parameter *)
 
 (* ************************** *)
 (* *****  Gauge groups  ***** *)
@@ -29,7 +29,7 @@ X=1;  (* The charge X of the U1D is a free parameter *)
 M$GaugeGroups = {
   U1Y  == { Abelian->True,  CouplingConstant->gp, Superfield->BSF, Charge->Y, GUTNormalization->3/5},
   (* Add U(1)D for new gauge boson *)
-  U1D  == { Abelian->True,  CouplingConstant->gd, Superfield->XSF, Charge->X},
+  U1D  == { Abelian->True,  CouplingConstant->gd, GaugeBoson->AD, Charge->QX},
   SU2L == { Abelian->False, CouplingConstant->gw, Superfield->WSF, 
             StructureConstant->ep, Representations->{Ta,SU2D}, Definitions->{Ta[a__]->PauliSigma[a]/2, ep->Eps}},
   SU3C == { Abelian->False, CouplingConstant->gs, Superfield->GSF,
@@ -63,8 +63,6 @@ M$Superfields = {
   VSF[1] == { ClassName->BSF, GaugeBoson->B,  Gaugino->bow}, 
   VSF[2] == { ClassName->WSF, GaugeBoson->Wi, Gaugino->wow, Indices->{Index[SU2W]}},
   VSF[3] == { ClassName->GSF, GaugeBoson->G,  Gaugino->gow, Indices->{Index[Gluon]}},
-  (* Add a gauge boson for U1D *)
-  VSF[4] == { ClassName->XSF, GaugeBoson->AD},
   CSF[1] == { ClassName->HU, Chirality->Left, Weyl->huw, Scalar->hus, QuantumNumbers->{Y-> 1/2}, Indices->{Index[SU2D]}},
   CSF[2] == { ClassName->HD, Chirality->Left, Weyl->hdw, Scalar->hds, QuantumNumbers->{Y->-1/2}, Indices->{Index[SU2D]}},
   CSF[3] == { ClassName->LL, Chirality->Left, Weyl->LLw, Scalar->LLs, QuantumNumbers->{Y->-1/2}, Indices->{Index[SU2D], Index[GEN]}},
