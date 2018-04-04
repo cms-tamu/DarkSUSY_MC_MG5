@@ -104,8 +104,7 @@ M$ClassesDescription = {
                wow[s_,3]:>Module[{i},-I*Conjugate[NN[i,2]]*neuw[s,i]]} },
   W[22] == { ClassName->gow,  Unphysical->True, Chirality->Left, SelfConjugate->False, Indices->{Index[Gluon]},  Definitions->{gow[inds__]->-I*goww[inds]} },
 (* Add Gaugino for U1D gauge boson *)  
-  W[27] == { ClassName->dow, Unphysical->True, Chirality->Left, SelfConjugate->False,
-             Definitions->{dow[_] -> 0} },
+  W[27] == { ClassName->dow, Unphysical->True, Chirality->Left, SelfConjugate->False, Definitions->{dow[_] -> 0} },
 
 (* Higgsinos: unphysical Weyls *)
   W[23] == { ClassName->huw,  Unphysical->True, Chirality->Left, SelfConjugate->False, Indices->{Index[SU2D]}, FlavorIndex->SU2D, QuantumNumbers->{Y-> 1/2}, 
