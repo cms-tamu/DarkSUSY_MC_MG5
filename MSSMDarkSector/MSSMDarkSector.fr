@@ -103,6 +103,8 @@ M$ClassesDescription = {
                wow[s_,2]:>Module[{i},(Conjugate[UU[i,1]]*chmw[s,i]-Conjugate[VV[i,1]]*chpw[s,i])/(-Sqrt[2])], 
                wow[s_,3]:>Module[{i},-I*Conjugate[NN[i,2]]*neuw[s,i]]} },
   W[22] == { ClassName->gow,  Unphysical->True, Chirality->Left, SelfConjugate->False, Indices->{Index[Gluon]},  Definitions->{gow[inds__]->-I*goww[inds]} },
+  W[27] == { ClassName->dow, Unphysical->True, Chirality->Left, SelfConjugate->False,
+             Definitions->{0} },
 
 (* Higgsinos: unphysical Weyls *)
   W[23] == { ClassName->huw,  Unphysical->True, Chirality->Left, SelfConjugate->False, Indices->{Index[SU2D]}, FlavorIndex->SU2D, QuantumNumbers->{Y-> 1/2}, 
