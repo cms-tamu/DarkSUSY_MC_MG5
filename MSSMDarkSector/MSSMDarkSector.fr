@@ -105,7 +105,7 @@ M$ClassesDescription = {
   W[22] == { ClassName->gow,  Unphysical->True, Chirality->Left, SelfConjugate->False, Indices->{Index[Gluon]},  Definitions->{gow[inds__]->-I*goww[inds]} },
 (* Add Gaugino for U1D gauge boson *)  
   W[27] == { ClassName->dow, Unphysical->True, Chirality->Left, SelfConjugate->False,
-             Definitions->{0} },
+             Definitions->{dow[_] -> 0} },
 
 (* Higgsinos: unphysical Weyls *)
   W[23] == { ClassName->huw,  Unphysical->True, Chirality->Left, SelfConjugate->False, Indices->{Index[SU2D]}, FlavorIndex->SU2D, QuantumNumbers->{Y-> 1/2}, 
