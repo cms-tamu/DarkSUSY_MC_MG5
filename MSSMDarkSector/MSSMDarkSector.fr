@@ -91,7 +91,7 @@ M$ClassesDescription = {
   V[4] == { ClassName->G, SelfConjugate->True, Indices->{Index[Gluon]}, Mass->0, Width->0, ParticleName->"g", 
             PDG->21, PropagatorLabel->"G", PropagatorType->C,    PropagatorArrow->None },
 (* Add physics field for dark photon *)            
-  V[5] == { ClassName->AD, SelfConjugate->True,  Mass->MAD,  Width->WAD,  ParticleName->"ad", QuantumNumbers->{X->0},
+  V[5] == { ClassName->AD, SelfConjugate->True,  Mass->MAD,  Width->WAD,  ParticleName->"ad",
             PDG->3000022, PropagatorLabel->"AD", PropagatorType->Sine, PropagatorArrow->None},
 
 (* Gauginos: unphysical Weyls *)
@@ -124,7 +124,7 @@ M$ClassesDescription = {
 
 (* Gauginos/Higgsinos: physical Diracs *)
   F[1] == { ClassName->neu, SelfConjugate->True,  Indices->{Index[NEU]}, FlavorIndex->NEU, WeylComponents->neuw,           
-            QuantumNumbers->{X->0}, ParticleName->{"n1","n2","n3","n4"}, ClassMembers->{neu1,neu2,neu3,neu4}, 
+            ParticleName->{"n1","n2","n3","n4"}, ClassMembers->{neu1,neu2,neu3,neu4}, 
             Mass->{Mneu,Mneu1,Mneu2,Mneu3,Mneu4}, Width->{Wneu,Wneu1,Wneu2,Wneu3,Wneu4}, 
             PDG->{1000022,1000023,1000025,1000035}, PropagatorLabel->{"neu","neu1","neu2","neu3","neu4"}, PropagatorType->Straight, PropagatorArrow->None },
   F[2] == { ClassName->ch,  SelfConjugate->False, Indices->{Index[CHA]}, FlavorIndex->CHA, WeylComponents->{chpw,chmwbar}, 
@@ -134,7 +134,7 @@ M$ClassesDescription = {
   F[3] == { ClassName->go,  SelfConjugate->True, Indices->{Index[Gluon]}, WeylComponents->goww, Mass->Mgo, Width->Wgo, ParticleName->"go",
             PDG->1000021, PropagatorLabel->"go", PropagatorType->Straight, PropagatorArrow->None },          
 (* Add physics field for dark neutralino decaying from n1 *)
-  F[8] == { ClassName->neuD, SelfConjugate->True, ParticleName->"nD", Mass->MneuD, Width->WneuD, QuantumNumbers->{X->0},
+  F[8] == { ClassName->neuD, SelfConjugate->True, ParticleName->"nD", Mass->MneuD, Width->WneuD,
             PDG->3000001, PropagatorLabel->"neuD", PropagatorType->Straight, PropagatorArrow->None },
 
 (* Higgs: unphysical scalars  *)
