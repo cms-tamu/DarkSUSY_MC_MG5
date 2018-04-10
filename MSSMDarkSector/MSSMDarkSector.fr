@@ -183,7 +183,7 @@ M$ClassesDescription = {
             ParticleName->{"ve","vm","vt"}, AntiParticleName->{"ve~","vm~","vt~"},
             ClassMembers->{ve,vm,vt}, Mass->{Mvl,Mve,Mvm,Mvt}, Width->0,
             PDG->{12,14,16}, PropagatorLabel->{"v","ve","vm","vt"}, PropagatorType->Straight, PropagatorArrow->Forward},
-  F[5] == { ClassName->l, SelfConjugate->False, Indices->{Index[GEN]}, FlavorIndex->GEN, WeylComponents->{eLw,ERwbar}, QuantumNumbers->{Q->-1,X->0},
+  F[5] == { ClassName->l, SelfConjugate->False, ClassMembers->{e,mu,ta}, Indices->{Index[GEN]}, FlavorIndex->GEN, WeylComponents->{eLw,ERwbar}, QuantumNumbers->{Q->-1,X->0},
             ParticleName->{"e-","mu-","tau-"}, AntiParticleName->{"e+","mu+","tau+"},
             ClassMembers->{e,m,ta}, Mass->{Ml,Me,Mm,Mta}, Width->0,
             PDG->{11,13,15}, PropagatorLabel->{"l","e","mu","tau"}, PropagatorType->Straight, PropagatorArrow->Forward},
@@ -565,9 +565,9 @@ LFeynmanGFix := Module[{VectorizeU,VectorizeD, Phiu,Phid,Phiu0,Phid0, phid1,phid
 LGF+LGh];
 
 (* Add new physics n1-nD-ad *)
-LN1NDAD := neu[1]*Ga[mu]*gd*neuD*AD[mu];
+LN1NDAD := gd*(neu1bar.Ga[mu].Ga[5].neuD)*AD[mu];
 (* Add new vertex ad-mu-mu *)
-LADMuMu := lbar[2]*Ga[mu]*gd*l[2]*AD[mu];
+LADMuMu := gd*(mubar.Ga[mu].mu)*AD[mu];
 
 (* Collecting all the pieces together *)
 Lag := ToDirac[SolveEqMotionF[SolveEqMotionD[LVector+LChiral+LSuperW+LSoft]]] + LFeynmanGFix + LN1NDAD + LADMuMu;
