@@ -565,7 +565,9 @@ LFeynmanGFix := Module[{VectorizeU,VectorizeD, Phiu,Phid,Phiu0,Phid0, phid1,phid
 LGF+LGh];
 
 (* Add new physics n1-nD-ad *)
-LN1NDAD := gd*(neu1bar.Ga[mu].Ga[5].neuD)*AD[mu];
+(* LN1NDAD := gd*(neu1bar.Ga[mu].Ga[5].neuD)*AD[mu]; *)
+(* TEST imaginary number i *)
+LN1NDAD := I*gd*(neu1bar.Ga[mu].neuD)*AD[mu];
 (* Add new vertex ad-mu-mu *)
 LADMuMu := gd*(mbar.Ga[mu].m)*AD[mu];
 
