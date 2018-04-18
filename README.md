@@ -1,13 +1,9 @@
 # DarkSUSY MC MG5
 
-## Create a directory in lxplus and upload the package to the directory
+## Create a directory and upload the package to the directory
 
-`mkdir ~/MadGraph5`
- 
+`mkdir ~/MadGraph5` 
 `cd ~/MadGraph5`
-
-## Get MG5 package
-
 `cp /afs/cern.ch/cms/generators/www/MG5_aMC_v2.6.1.tar.gz ./`
 `tar -xzf MG5_aMC_v2.6.1.tar.gz`
 
@@ -18,7 +14,7 @@ Go to the folder "MG5_aMC_v2_6_1/models". Copy the UFO model here and unzip:
 `wget https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/MSSMD_UFO.zip`
 `unzip MSSMD_UFO.zip`
 
-## Set up generate and decay processes
+## Set up processes
 
 Go to the folder "MG5_aMC_v2_6_1". Edit the file `proc_card.dat` to be same as:
 
@@ -37,12 +33,12 @@ Go to the folder "MG5_aMC_v2_6_1". Edit the file `proc_card.dat` to be same as:
     output DarkSUSY -nojpeg
 
 ## Check the process
-Run `./MG5_aMC_v2_6_1/bin/mg5_aMC proc_card.dat` and a folder called "pp_to_Higgs_HEFT_Model" will be generated. 
+Run `./MG5_aMC_v2_6_1/bin/mg5_aMC proc_card.dat` and a folder called "DarkSUSY" will be generated. 
 
-Use `firefox pp_to_Higgs_HEFT_Model/index.html` to check the specified process.
+Use `firefox DarkSUSY/index.html` to check the specified process.
 
 ## Edit model parameters
-The model parameters include masses and widths for particles and coupling constants. They are defined in file param_card.dat in the pp_to_Higgs_HEFT_Model/Cards folder.
+The model parameters include masses and widths for particles and coupling constants. They are defined in file `param_card.dat` in the `DarkSUSY/Cards` folder.
 
 ## Generate events 
 
