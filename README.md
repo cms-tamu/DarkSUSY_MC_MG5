@@ -1,21 +1,17 @@
 # DarkSUSY MC MG5
 
 ## Create a directory and upload the package to the directory
-
     `mkdir ~/MadGraph5` 
     `cd ~/MadGraph5`
     `cp /afs/cern.ch/cms/generators/www/MG5_aMC_v2.6.1.tar.gz ./`
     `tar -xzf MG5_aMC_v2.6.1.tar.gz`
 
 ## Get UFO model 
-
 Go to the folder "MG5_aMC_v2_6_1/models". Copy the UFO model here and unzip:
-
     `wget https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/MSSMD_UFO.zip`
     `unzip MSSMD_UFO.zip`
 
 ## Set up processes
-
 Go to the folder "MG5_aMC_v2_6_1". Edit the file `proc_card.dat` to be same as:
 
     import model heft
@@ -41,16 +37,14 @@ Use `firefox DarkSUSY/index.html` to check the process.
 The model parameters include masses and widths for particles and coupling constants. They are defined in file `param_card.dat` in the `DarkSUSY/Cards` folder.
 
 ## Generate events 
-
-`cd /MadGraph5/MG5_aMC_v2_6_1/DarkSUSY/bin`
-
-`./generate_events`
+    `cd /MadGraph5/MG5_aMC_v2_6_1/DarkSUSY/bin`
+    `./generate_events`
 
 The lhe.gz file along with a txt setting file will be generated under `MG5_aMC_v2_6_1/DarkSUSY/Events` directory.
 
 Unzip the file to get the .lhe file:
 
-`gunzip -d *.lhe.gz`
+    `gunzip -d *.lhe.gz`
 
 Repeat generation for other masses of Higgs by editing the higgs mass in param_card.dat.
 
