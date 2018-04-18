@@ -2,17 +2,17 @@
 
 ## Create a directory and upload the package to the directory
 
-`mkdir ~/MadGraph5` 
-`cd ~/MadGraph5`
-`cp /afs/cern.ch/cms/generators/www/MG5_aMC_v2.6.1.tar.gz ./`
-`tar -xzf MG5_aMC_v2.6.1.tar.gz`
+    `mkdir ~/MadGraph5` 
+    `cd ~/MadGraph5`
+    `cp /afs/cern.ch/cms/generators/www/MG5_aMC_v2.6.1.tar.gz ./`
+    `tar -xzf MG5_aMC_v2.6.1.tar.gz`
 
 ## Get UFO model 
 
 Go to the folder "MG5_aMC_v2_6_1/models". Copy the UFO model here and unzip:
 
-`wget https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/MSSMD_UFO.zip`
-`unzip MSSMD_UFO.zip`
+    `wget https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/MSSMD_UFO.zip`
+    `unzip MSSMD_UFO.zip`
 
 ## Set up processes
 
@@ -33,9 +33,9 @@ Go to the folder "MG5_aMC_v2_6_1". Edit the file `proc_card.dat` to be same as:
     output DarkSUSY -nojpeg
 
 ## Check the process
-Run `./MG5_aMC_v2_6_1/bin/mg5_aMC proc_card.dat` and a folder called "DarkSUSY" will be generated. 
+Run `./MG5_aMC_v2_6_1/bin/mg5_aMC proc_card.dat` and a folder called `DarkSUSY` will be generated. 
 
-Use `firefox DarkSUSY/index.html` to check the specified process.
+Use `firefox DarkSUSY/index.html` to check the process.
 
 ## Edit model parameters
 The model parameters include masses and widths for particles and coupling constants. They are defined in file `param_card.dat` in the `DarkSUSY/Cards` folder.
