@@ -14,22 +14,30 @@
 
 `tar -xzf MG5_aMC_v2.6.1.tar.gz`
 
-## Set up process pp -> Higgs through a top loop
+## Get UFO model 
+
+Go to the folder "MG5_aMC_v2_6_1/models". Copy the UFO model here and unzip:
+
+`wget https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/MSSMD_UFO.zip`
+`unzip MSSMD_UFO.zip`
+
+## Set up generate and decay processes
 
 Go to the folder "MG5_aMC_v2_6_1". Edit the file `proc_card.dat` to be same as:
 
     import model heft
     # Define multiparticle labels
-    define p = u u~ c c~ d d~ s s~ g
-    define j = u u~ c c~ d d~ s s~ g
+    define p = g u c d s u~ c~ d~ s~
+    define j = g u c d s u~ c~ d~ s~
     define l+ = e+ mu+
     define l- = e- mu-
     define vl = ve vm
     define vl~ = ve~ vm~
+    import model MSSMD_UFO
     # Specify process(es) to run
-    generate p p > h QED=0 QCD=99 HIG=1
+    generate p p > h01,(h01 > n1 n1, (n1 > ad nD, ad > mu+ mu-))
     # Output processes to MadEvent directory
-    output pp_to_Higgs_HEFT_Model -nojpeg
+    output DarkSUSY -nojpeg
 
 ## Check the process
 Run `./MG5_aMC_v2_6_1/bin/mg5_aMC proc_card.dat` and a folder called "pp_to_Higgs_HEFT_Model" will be generated. 
@@ -39,17 +47,13 @@ Use `firefox pp_to_Higgs_HEFT_Model/index.html` to check the specified process.
 ## Edit model parameters
 The model parameters include masses and widths for particles and coupling constants. They are defined in file param_card.dat in the pp_to_Higgs_HEFT_Model/Cards folder.
 
-In our case the default mass of Higgs is 125 GeV, can change to other masses:
+## Generate events 
 
-`25 1.250000e+02 # MH`
-
-## Generate Higgs unweighted events in MG5
-
-`cd /MadGraph5/MG5_aMC_v2_6_1/pp_to_Higgs_HEFT_Model/bin`
+`cd /MadGraph5/MG5_aMC_v2_6_1/DarkSUSY/bin`
 
 `./generate_events`
 
-The lhe.gz file along with a txt setting file will be generated under `MG5_aMC_v2_6_1/pp_to_Higgs_HEFT_Model/Events` directory.
+The lhe.gz file along with a txt setting file will be generated under `MG5_aMC_v2_6_1/DarkSUSY/Events` directory.
 
 Unzip the file to get the .lhe file:
 
@@ -57,4 +61,6 @@ Unzip the file to get the .lhe file:
 
 Repeat generation for other masses of Higgs by editing the higgs mass in param_card.dat.
 
-## Decay the Higgs
+## Change dark photon lifetime
+
+## LHE Validation
