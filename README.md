@@ -6,12 +6,9 @@
  
 `cd ~/MadGraph5`
 
-## Download the MAdGraph5 package
+## Get MG5 package
 
 `cp /afs/cern.ch/cms/generators/www/MG5_aMC_v2.6.1.tar.gz ./`
-
-## Unzip the package and a folder "MG5_aMC_v2_5_5" will be created
-
 `tar -xzf MG5_aMC_v2.6.1.tar.gz`
 
 ## Get UFO model 
