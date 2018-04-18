@@ -5,9 +5,9 @@ from operator import itemgetter
 muonID = 13
 higgsID = 25
 n1ID = 1000022
-nDID = 3000001 
-nExit = 80002
+nDID = 3000001
 gammaDID = 3000022
+nExit = 80002
 
 hMass = "125"
 n1Mass = "10"
