@@ -8,12 +8,12 @@
     tar -xzf MG5_aMC_v2.6.1.tar.gz
 
 ## Get UFO model 
-Go to the folder "MG5_aMC_v2_6_1/models". Copy the UFO model here and unzip it:
+Go to the folder `MG5_aMC_v2_6_1/models`. Copy the UFO model here and unzip it:
 
     wget https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/MSSMD_UFO.zip
 
 ## Set up processes
-Go to the folder "MG5_aMC_v2_6_1". Edit the file `proc_card.dat` to be same as:
+Edit the file `MG5_aMC_v2_6_1/proc_card.dat` to be same as:
 
     import model heft
     # Define multiparticle labels
