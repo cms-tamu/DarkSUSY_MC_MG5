@@ -4,10 +4,9 @@ from operator import itemgetter
 
 muonID = 13
 higgsID = 25
-n1ID = 3000002 
+n1ID = 1000022
 nDID = 3000001 
 nExit = 80002
-#nExit = 1000
 gammaDID = 3000022
 
 hMass = "125"
