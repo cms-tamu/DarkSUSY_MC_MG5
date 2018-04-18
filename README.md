@@ -7,9 +7,8 @@
     `tar -xzf MG5_aMC_v2.6.1.tar.gz`
 
 ## Get UFO model 
-Go to the folder "MG5_aMC_v2_6_1/models". Copy the UFO model here and unzip:
+Go to the folder "MG5_aMC_v2_6_1/models". Copy the UFO model here and unzip it:
     `wget https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/MSSMD_UFO.zip`
-    `unzip MSSMD_UFO.zip`
 
 ## Set up processes
 Go to the folder "MG5_aMC_v2_6_1". Edit the file `proc_card.dat` to be same as:
@@ -43,11 +42,14 @@ The model parameters include masses and widths for particles and coupling consta
 The lhe.gz file along with a txt setting file will be generated under `MG5_aMC_v2_6_1/DarkSUSY/Events` directory.
 
 Unzip the file to get the .lhe file:
-
     `gunzip -d *.lhe.gz`
 
 Repeat generation for other masses of Higgs by editing the higgs mass in param_card.dat.
 
 ## Change dark photon lifetime
+    `wget https://raw.githubusercontent.com/weishi10141993/DarkSUSY_MC_MG5/master/MSSMDarkSector/replace_lifetime_in_LHE.py` 
+    `python replace_lifetime_in_LHE.py > unweighted_events.lhe`
 
 ## LHE Validation
+    `wget https://raw.githubusercontent.com/weishi10141993/DarkSUSY_MC_MG5/master/MSSMDarkSector/LHE_read.py`
+    `python LHE_read.py`
