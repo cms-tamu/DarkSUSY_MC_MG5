@@ -1179,6 +1179,14 @@ for line in f:
 		  word_n = 0
 #		  print "P", line
 		  for word in line.split():
+		
+		    #Add for MG5 LHE 2018.04.20
+                    if 'mgrwt' in word: break
+                    if 'rscale' in word: break
+                    if 'asrwt' in word: break
+                    if 'pdfrwt' in word: break
+                    if 'totfact' in word: break
+			
 		    word_n = word_n + 1
 		    if word_n ==  1: IDUP    = int(word)   # particle PDG identity code
 		    if word_n ==  2: ISTUP   = int(word)   # status code
