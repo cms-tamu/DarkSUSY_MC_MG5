@@ -2,12 +2,12 @@ import ROOT, array, os, re, math, random, string
 from math import *
 from operator import itemgetter
 
-muonID = 13
 higgsID = 25
 n1ID = 1000022 
 nDID = 3000001 
-nExit = 80002
 gammaDID = 3000022
+muonID = 13
+nExit = 80002
 
 #========================================
 #global constant for all DarkSUSY samples
@@ -29,7 +29,6 @@ mass_GammaD = "0p25" #pure string
 mass_GammaD_Legend = "0.25" #numerical string
 lifetime_GammaD = "100" #pure string
 lifetime_GammaD_Legend = "100" #numerical string
-
 
 print mass_GammaD
 print lifetime_GammaD
