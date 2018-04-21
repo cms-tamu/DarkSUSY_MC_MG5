@@ -4,44 +4,32 @@ from operator import itemgetter
 
 muonID = 13
 higgsID = 25
-n1ID = 1000022
-nDID = 3000001
-gammaDID = 3000022
+n1ID = 1000022 
+nDID = 3000001 
 nExit = 80002
+gammaDID = 3000022
 
+#========================================
+#global constant for all DarkSUSY samples
+#========================================
 hMass = "125"
-n1Mass = "10"
 nDMass = "1"
+energy = "13"
+mass_Higgs = "125"
 
-filename = "DarkSUSY_mH_125_mGammaD_0250_13TeV_cT_050_madgraph452_bridge224_events80k.lhe"
+#two types of mGammaD: 0pXX or integer
+filename = "DarkSUSY_mH_125_mN1_10_mND_1_mGammaD_0p25_13TeV_cT_100_events80k.lhe"
 f = open(filename, 'r')
+#==================================
+#local variable depending on sample
+#==================================
+#lightest neutralino mass in GeV
+n1Mass = "10"
+mass_GammaD = "0p25" #pure string
+mass_GammaD_Legend = "0.25" #numerical string
+lifetime_GammaD = "100" #pure string
+lifetime_GammaD_Legend = "100" #numerical string
 
-if len(filename) == 77:
-	mass_GammaD = filename[24:-49]
-	lifetime_GammaD = filename[38:-36]
-	energy = filename[29:-46]
-	mass_Higgs = filename[12:-62]
-	lifetime_GammaD_Legend = filename[38:-38] + "." + filename[39:-36]
-	mass_GammaD_Legend = filename [24:-52] + "." + filename[25:-49]
-	
-	if mass_GammaD_Legend[4] == "0": mass_GammaD_Legend = mass_GammaD_Legend[:-1]
-	if mass_GammaD_Legend[3] == "0": mass_GammaD_Legend = mass_GammaD_Legend[:-1]
-	if mass_GammaD_Legend[2] == "0": mass_GammaD_Legend = mass_GammaD_Legend[:-1]
-	if mass_GammaD_Legend[2] == "." and len(mass_GammaD_Legend) == 2: mass_GammaD_Legend = mass_GammaD_Legend + "0"
-	
-	switch = 0
-	if lifetime_GammaD_Legend[3] == "0": 
-		lifetime_GammaD_Legend = lifetime_GammaD_Legend[:-1]
-		switch = 1
-	if lifetime_GammaD_Legend[2] == "0" and switch == 1: lifetime_GammaD_Legend = lifetime_GammaD_Legend[:-1]
-
-else: 
-	mass_GammaD = filename[24:-42]
-	energy = filename[29:-39]
-	mass_Higgs = filename[12:-55]       
-	mass_GammaD_Legend = filename[24:-45] + "." + filename[25:-42]
-	lifetime_GammaD = "000"
-        lifetime_GammaD_Legend = "0.00"
 
 print mass_GammaD
 print lifetime_GammaD
