@@ -57,4 +57,5 @@ Repeat generation for other masses of Higgs by editing the higgs mass in param_c
 
 ## LHE Validation
     wget https://raw.githubusercontent.com/weishi10141993/DarkSUSY_MC_MG5/master/MSSMDarkSector/LHE_read.py
+    wget https://raw.githubusercontent.com/weishi10141993/DarkSUSY_MC_MG5/master/MSSMDarkSector/tdrStyle.py
     python LHE_read.py
