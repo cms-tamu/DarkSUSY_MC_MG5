@@ -5,10 +5,10 @@ import array, os, re, math, random, string
 from math import *
 
 ## set your new ctau value here
-ctau_mean_mm = 5.0
+ctau_mean_mm = 100
 
 ## set input file name
-filename = "DarkSUSY_mH_125_mGammaD_2000_ctauExp_0_13TeV-madgraph452_bridge224_events80k.lhe"
+filename = "unweighted_events.lhe"
 
 f = open(filename, 'r')
 
