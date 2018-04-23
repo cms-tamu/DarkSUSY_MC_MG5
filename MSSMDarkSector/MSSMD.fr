@@ -144,7 +144,7 @@ M$ClassesDescription = {
             Definitions->{ hds[1]->(vd - Sin[alp]*h0 + Cos[alp]*H0 + I*Sin[beta]*A0 - I*Cos[beta]*G0)/Sqrt[2],hds[2]->Sin[beta]*Hbar - Cos[beta]*GPbar} },
 
 (* Higgs: physical fields and Goldstones *)
-  S[1] == { ClassName->h0, SelfConjugate->True, Mass->MH01, Width->WH01, ParticleName->"h01",
+  S[1] == { ClassName->h0, SelfConjugate->True, Mass->MH01, Width->WH01, ParticleName->"h",
             PDG->25, PropagatorLabel->"h0", PropagatorType->ScalarDash,  PropagatorArrow->None},
   S[2] == { ClassName->H0, SelfConjugate->True, Mass->MH02, Width->WH02, ParticleName->"h02",
             PDG->35, PropagatorLabel->"H0", PropagatorType->ScalarDash,  PropagatorArrow->None},
