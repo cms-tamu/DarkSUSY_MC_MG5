@@ -28,11 +28,7 @@ define vl = ve vm
 define vl~ = ve~ vm~
 import model MSSMD_UFO
 # Specify process(es) to run
-generate p p > h01,(h01 > n1 n1, (n1 > ad nD, ad > mu+ mu-))
-#generate p p > h01
-#generate h01 > n1 n1
-#generate n1 > ad nD
-#generate ad > mu+ mu-
+generate p p > h,(h > n1 n1, (n1 > ad nD, ad > mu+ mu-))
 # Output processes to MadEvent directory
 output DarkSUSY -nojpeg 
 # This will create a directory PROC_$MODELNAME_$X
