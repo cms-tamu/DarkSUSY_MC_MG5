@@ -8,7 +8,7 @@
 (* ************************** *)
 (* *****  Information   ***** *)
 (* ************************** *)
-M$ModelName = "MSSMDarkSector";
+M$ModelName = "MSSMD";
 M$Information = { Authors->{"Wei Shi"}, Emails->{"weishi@rice.edu"}, Institutions->{"Rice University"},
                   Date->"03.21.2018", Version->"1",
                   References->{"C. Duhr, B. Fuks, CPC 182 (2011) 2404-2462, arXiv:1102.4191 [hep-ph]"} };
