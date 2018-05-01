@@ -1610,8 +1610,8 @@ cnv.SaveAs("DarkSusy_mH_125_mGammaD_" + mass_GammaD + "_cT_"+ lifetime_GammaD + 
 cnv.SaveAs("DarkSusy_mH_125_mGammaD_" + mass_GammaD + "_cT_"+ lifetime_GammaD + "_LHE_Higgs_pT.C")
 
 h_higgs_pZ_dummy.Draw()
-#h_higgs_pZ.DrawNormalized("same")
-plotOverflow(h_higgs_pZ)
+h_higgs_pZ.DrawNormalized("same")
+#plotOverflow(h_higgs_pZ)
 scaleAxisY(h_higgs_pZ,h_higgs_pZ_dummy)
 info.Draw()
 txtHeader.Draw()
@@ -1658,8 +1658,8 @@ cnv.SaveAs("DarkSusy_mH_125_mGammaD_" + mass_GammaD + "_cT_"+ lifetime_GammaD + 
 cnv.SetLogx(0)
 
 h_higgs_p_dummy.Draw()
-#h_higgs_p.DrawNormalized("same")
-plotOverflow(h_higgs_p)
+h_higgs_p.DrawNormalized("same")
+#plotOverflow(h_higgs_p)
 scaleAxisY(h_higgs_p,h_higgs_p_dummy)
 info.Draw()
 txtHeader.Draw()
@@ -1689,11 +1689,11 @@ cnv.SaveAs("DarkSusy_mH_125_mGammaD_" + mass_GammaD + "_cT_"+ lifetime_GammaD + 
 cnv.SaveAs("DarkSusy_mH_125_mGammaD_" + mass_GammaD + "_cT_"+ lifetime_GammaD + "_LHE_n1_pT.C")
 
 h_n1_1_pZ_dummy.Draw()
-plotOverflow(h_n1_1_pZ)
-plotOverflow(h_n1_2_pZ)
+#plotOverflow(h_n1_1_pZ)
+#plotOverflow(h_n1_2_pZ)
 scaleAxisY(h_n1_1_pZ,h_n1_1_pZ_dummy)
-#h_n1_1_pZ.DrawNormalized("same")
-#h_n1_2_pZ.DrawNormalized("same")
+h_n1_1_pZ.DrawNormalized("same")
+h_n1_2_pZ.DrawNormalized("same")
 
 legend = ROOT.TLegend(0.46,0.6744444,0.6955556,0.7644444)
 legend.SetFillColor(ROOT.kWhite)
@@ -1757,11 +1757,11 @@ cnv.SaveAs("DarkSusy_mH_125_mGammaD_" + mass_GammaD + "_cT_"+ lifetime_GammaD + 
 
 
 h_n1_1_p_dummy.Draw()
-plotOverflow(h_n1_1_p)
-plotOverflow(h_n1_2_p)
+#plotOverflow(h_n1_1_p)
+#plotOverflow(h_n1_2_p)
 scaleAxisY(h_n1_1_p,h_n1_1_p_dummy)
-#h_n1_1_p.DrawNormalized("same")
-#h_n1_2_p.DrawNormalized("same")
+h_n1_1_p.DrawNormalized("same")
+h_n1_2_p.DrawNormalized("same")
 
 legend = ROOT.TLegend(0.46,0.6744444,0.6955556,0.7644444)
 legend.SetFillColor(ROOT.kWhite)
@@ -1802,10 +1802,10 @@ cnv.SaveAs("DarkSusy_mH_125_mGammaD_" + mass_GammaD + "_cT_"+ lifetime_GammaD + 
 cnv.SaveAs("DarkSusy_mH_125_mGammaD_" + mass_GammaD + "_cT_"+ lifetime_GammaD + "_LHE_n1_M.C")
 
 h_nD_1_pT_dummy.Draw()
-#h_nD_1_pT.DrawNormalized("same")
-#h_nD_2_pT.DrawNormalized("same")
-plotOverflow(h_nD_1_pT)
-plotOverflow(h_nD_2_pT)
+h_nD_1_pT.DrawNormalized("same")
+h_nD_2_pT.DrawNormalized("same")
+#plotOverflow(h_nD_1_pT)
+#plotOverflow(h_nD_2_pT)
 scaleAxisY(h_nD_2_pT,h_nD_1_pT)
 
 legend = ROOT.TLegend(0.46,0.6744444,0.6955556,0.7644444)
