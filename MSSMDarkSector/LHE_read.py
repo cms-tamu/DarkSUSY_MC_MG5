@@ -2657,8 +2657,10 @@ cnv.SaveAs("DarkSusy_mH_125_mGammaD_" + mass_GammaD + "_cT_"+ lifetime_GammaD + 
 cnv.SaveAs("DarkSusy_mH_125_mGammaD_" + mass_GammaD + "_cT_"+ lifetime_GammaD + "_LHE_dimuon_Phi.C")
 
 h_dimuon_1_p_dummy.Draw()
-plotOverflow(h_dimuon_1_p)
-plotOverflow(h_dimuon_2_p)
+#plotOverflow(h_dimuon_1_p)
+#plotOverflow(h_dimuon_2_p)
+h_dimuon_1_p.DrawNormalized("same")
+h_dimuon_2_p.DrawNormalized("same")
 scaleAxisY(h_dimuon_2_p,h_dimuon_1_p_dummy)
 
 legend = ROOT.TLegend(0.46,0.6744444,0.6955556,0.7644444)
