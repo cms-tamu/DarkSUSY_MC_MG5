@@ -39,7 +39,7 @@ Repeat generation for other masses of Higgs by editing the higgs mass in param_c
 ## Change dark photon lifetime
 
     wget https://raw.githubusercontent.com/weishi10141993/DarkSUSY_MC_MG5/master/MSSMDarkSector/replace_lifetime_in_LHE.py
-    python replace_lifetime_in_LHE.py > unweighted_events.lhe
+    python replace_lifetime_in_LHE.py > DarkSUSY_mH_125_mN1_10_mND_1_mGammaD_0p25_13TeV_cT_100_events80k.lhe
 
 ## LHE Validation
     wget https://raw.githubusercontent.com/weishi10141993/DarkSUSY_MC_MG5/master/MSSMDarkSector/LHE_read.py
