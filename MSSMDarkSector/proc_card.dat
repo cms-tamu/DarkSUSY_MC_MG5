@@ -18,14 +18,14 @@
 #*     run as ./bin/mg5  filename                           *
 #*                                                          *
 #************************************************************
-import model heft
+#import model heft
 # Define multiparticle labels
-define p = g u c d s u~ c~ d~ s~
-define j = g u c d s u~ c~ d~ s~
-define l+ = e+ mu+
-define l- = e- mu-
-define vl = ve vm
-define vl~ = ve~ vm~
+#define p = g u c d s u~ c~ d~ s~
+#define j = g u c d s u~ c~ d~ s~
+#define l+ = e+ mu+
+#define l- = e- mu-
+#define vl = ve vm
+#define vl~ = ve~ vm~
 import model MSSMD_UFO
 # Specify process(es) to run
 generate p p > h,(h > n1 n1, (n1 > ad nD, ad > mu+ mu-))
