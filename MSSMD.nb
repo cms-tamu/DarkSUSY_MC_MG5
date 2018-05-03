@@ -1,0 +1,458 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15362,        450]
+NotebookOptionsPosition[     13002,        378]
+NotebookOutlinePosition[     13355,        394]
+CellTagsIndexPosition[     13312,        391]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"$FeynRulesPath", "=", 
+   RowBox[{
+   "SetDirectory", "[", 
+    "\"\</Users/ws13/Documents/DarkSUSY/MG5/feynrules-current/\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"<<", "FeynRules`"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"$FeynRulesPath", "<>", "\"\</Models/MSSMD\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LoadModel", "[", "\"\<MSSMD.fr\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ReadLHAFile", "[", 
+   RowBox[{"Input", "\[Rule]", "\"\<sps1a.dat\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"CheckHermiticity", "[", 
+   RowBox[{"LADMuMu", "+", "LN1NDAD"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"WriteUFO", "[", "Lag", "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.7324434905061827`*^9, 3.7324434959477243`*^9}, {
+  3.7324442065609827`*^9, 3.732444215673705*^9}, {3.732447138253428*^9, 
+  3.7324471410221243`*^9}, {3.7324473054173183`*^9, 3.732447308837887*^9}, {
+  3.732448262361619*^9, 3.7324482625818768`*^9}, {3.7334377789676123`*^9, 
+  3.73343777977355*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\" - FeynRules - \"\>"], "Print",
+ CellChangeTimes->{3.733449381543188*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Version: \"\>", "\[InvisibleSpace]", "\<\"2.3.32\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"\<\" (\"\>", " ", "\<\"12 March 2018\"\>"}], 
+   "\[InvisibleSpace]", "\<\").\"\>"}],
+  SequenceForm["Version: ", "2.3.32", " (" "12 March 2018", ")."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7334493815462418`*^9}],
+
+Cell[BoxData["\<\"Authors: A. Alloul, N. Christensen, C. Degrande, C. Duhr, \
+B. Fuks\"\>"], "Print",
+ CellChangeTimes->{3.7334493815692167`*^9}],
+
+Cell[BoxData["\<\" \"\>"], "Print",
+ CellChangeTimes->{3.733449381572405*^9}],
+
+Cell[BoxData["\<\"Please cite:\"\>"], "Print",
+ CellChangeTimes->{3.7334493815753736`*^9}],
+
+Cell[BoxData["\<\"    - Comput.Phys.Commun.185:2250-2300,2014 \
+(arXiv:1310.1921);\"\>"], "Print",
+ CellChangeTimes->{3.733449381578459*^9}],
+
+Cell[BoxData["\<\"    - Comput.Phys.Commun.180:1614-1641,2009 \
+(arXiv:0806.4194).\"\>"], "Print",
+ CellChangeTimes->{3.733449381581362*^9}],
+
+Cell[BoxData["\<\" \"\>"], "Print",
+ CellChangeTimes->{3.733449381583956*^9}],
+
+Cell[BoxData["\<\"http://feynrules.phys.ucl.ac.be\"\>"], "Print",
+ CellChangeTimes->{3.7334493815862913`*^9}],
+
+Cell[BoxData["\<\" \"\>"], "Print",
+ CellChangeTimes->{3.733449381589069*^9}],
+
+Cell[BoxData["\<\"The FeynRules palette can be opened using the command \
+FRPalette[].\"\>"], "Print",
+ CellChangeTimes->{3.733449381591604*^9}],
+
+Cell[BoxData["\<\"This model implementation was created by\"\>"], "Print",
+ CellChangeTimes->{3.733449398534704*^9}],
+
+Cell[BoxData["\<\"Wei Shi\"\>"], "Print",
+ CellChangeTimes->{3.733449398537757*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Model Version: \"\>", "\[InvisibleSpace]", "\<\"1\"\>"}],
+  SequenceForm["Model Version: ", "1"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7334493985408382`*^9}],
+
+Cell[BoxData["\<\"Please cite\"\>"], "Print",
+ CellChangeTimes->{3.73344939854342*^9}],
+
+Cell[BoxData["\<\"C. Duhr, B. Fuks, CPC 182 (2011) 2404-2462, arXiv:1102.4191 \
+[hep-ph]\"\>"], "Print",
+ CellChangeTimes->{3.733449398545825*^9}],
+
+Cell[BoxData["\<\"For more information, type ModelInformation[].\"\>"], \
+"Print",
+ CellChangeTimes->{3.733449398548534*^9}],
+
+Cell[BoxData["\<\"\"\>"], "Print",
+ CellChangeTimes->{3.733449398551156*^9}],
+
+Cell[BoxData["\<\"   - Loading particle classes.\"\>"], "Print",
+ CellChangeTimes->{3.733449398554049*^9}],
+
+Cell[BoxData["\<\"   - Loading gauge group classes.\"\>"], "Print",
+ CellChangeTimes->{3.733449399018832*^9}],
+
+Cell[BoxData["\<\"   - Loading parameter classes.\"\>"], "Print",
+ CellChangeTimes->{3.7334493990292788`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\nModel \"\>", "\[InvisibleSpace]", "\<\"MSSMDarkSector\"\>", 
+   "\[InvisibleSpace]", "\<\" loaded.\"\>"}],
+  SequenceForm["\nModel ", "MSSMDarkSector", " loaded."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.733449406215713*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Parameters updated from \"\>", 
+   "\[InvisibleSpace]", "\<\"sps1a.dat\"\>"}],
+  SequenceForm["Parameters updated from ", "sps1a.dat"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7334494091938343`*^9}],
+
+Cell[BoxData["\<\"Checking for hermiticity by calculating the Feynman rules \
+contained in L-HC[L].\"\>"], "Print",
+ CellChangeTimes->{3.733449409196994*^9}],
+
+Cell[BoxData["\<\"If the lagrangian is hermitian, then the number of vertices \
+should be zero.\"\>"], "Print",
+ CellChangeTimes->{3.733449409199924*^9}],
+
+Cell[BoxData[
+ StyleBox["\<\"Starting Feynman rule calculation.\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[1, 0.5, 0],
+  FrontFaceColor->RGBColor[1, 0.5, 0],
+  BackFaceColor->RGBColor[1, 0.5, 0],
+  GraphicsColor->RGBColor[1, 0.5, 0],
+  FontWeight->Bold,
+  FontColor->RGBColor[1, 0.5, 0]]], "Print",
+ CellChangeTimes->{3.733449409416807*^9}],
+
+Cell[BoxData["\<\"Expanding the Lagrangian...\"\>"], "Print",
+ CellChangeTimes->{3.7334494094226007`*^9}],
+
+Cell[BoxData["\<\"No vertices found.\"\>"], "Print",
+ CellChangeTimes->{3.733449409425468*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"0", "\[InvisibleSpace]", "\<\" vertices obtained.\"\>"}],
+  SequenceForm[0, " vertices obtained."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.73344940942809*^9}],
+
+Cell[BoxData["\<\"The lagrangian is hermitian.\"\>"], "Print",
+ CellChangeTimes->{3.733449409441064*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Flavor expansion: \"\>", "\[InvisibleSpace]", 
+   ProgressIndicatorBox[Dynamic[$CellContext`prg1$98544]]}],
+  SequenceForm["Flavor expansion: ", 
+   ProgressIndicator[
+    Dynamic[$CellContext`prg1$98544]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.733449720445479*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Opt 1: \"\>", "\[InvisibleSpace]", 
+   ProgressIndicatorBox[Dynamic[$CellContext`prgo1$98544]]}],
+  SequenceForm["Opt 1: ", 
+   ProgressIndicator[
+    Dynamic[$CellContext`prgo1$98544]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.733449844938258*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Weyl2Dirac: \"\>", "\[InvisibleSpace]", 
+   ProgressIndicatorBox[Dynamic[$CellContext`prg2$98544]]}],
+  SequenceForm["Weyl2Dirac: ", 
+   ProgressIndicator[
+    Dynamic[$CellContext`prg2$98544]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7334498878804693`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Opt2: \"\>", "\[InvisibleSpace]", 
+   ProgressIndicatorBox[Dynamic[$CellContext`prgo2$98544]]}],
+  SequenceForm["Opt2: ", 
+   ProgressIndicator[
+    Dynamic[$CellContext`prgo2$98544]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7334500129144773`*^9}],
+
+Cell[BoxData["\<\" --- Universal FeynRules Output (UFO) v 1.1 ---\"\>"], \
+"Print",
+ CellChangeTimes->{3.7334500589444427`*^9}],
+
+Cell[BoxData[
+ StyleBox["\<\"Starting Feynman rule calculation.\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[1, 0.5, 0],
+  FrontFaceColor->RGBColor[1, 0.5, 0],
+  BackFaceColor->RGBColor[1, 0.5, 0],
+  GraphicsColor->RGBColor[1, 0.5, 0],
+  FontWeight->Bold,
+  FontColor->RGBColor[1, 0.5, 0]]], "Print",
+ CellChangeTimes->{3.733450064100469*^9}],
+
+Cell[BoxData["\<\"Expanding the Lagrangian...\"\>"], "Print",
+ CellChangeTimes->{3.733450064104177*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Expanding the indices over \"\>", "\[InvisibleSpace]", "2", 
+   "\[InvisibleSpace]", "\<\" cores\"\>"}],
+  SequenceForm["Expanding the indices over ", 2, " cores"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.733450064107061*^9}],
+
+Cell[BoxData["\<\"Collecting the different structures that enter the \
+vertex.\"\>"], "Print",
+ CellChangeTimes->{3.7334501763547163`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "419", "\[InvisibleSpace]", "\<\" possible non-zero vertices have been \
+found -> starting the computation: \"\>", "\[InvisibleSpace]", 
+   DynamicBox[ToBoxes[FeynRules`FR$FeynmanRules, StandardForm],
+    ImageSizeCache->{22., {1., 8.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+   "\[InvisibleSpace]", "419", "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  419, " possible non-zero vertices have been found -> starting the \
+computation: ", 
+   Dynamic[FeynRules`FR$FeynmanRules], " / ", 419, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.733450177447134*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"419", "\[InvisibleSpace]", "\<\" vertices obtained.\"\>"}],
+  SequenceForm[419, " vertices obtained."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7334502609562902`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Flavor expansion of the vertices distributed over \"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" cores: \"\>", 
+   "\[InvisibleSpace]", 
+   DynamicBox[ToBoxes[FeynRules`FR$Count1, StandardForm],
+    ImageSizeCache->{22., {1., 8.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+   "\[InvisibleSpace]", "419"}],
+  SequenceForm[
+  "Flavor expansion of the vertices distributed over ", 2, " cores: ", 
+   Dynamic[FeynRules`FR$Count1], " / ", 419],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.73345114518646*^9}],
+
+Cell[BoxData["\<\"   - Saved vertices in InterfaceRun[ 1 ].\"\>"], "Print",
+ CellChangeTimes->{3.73345367259492*^9}],
+
+Cell[BoxData[
+ StyleBox["\<\"Computing the squared matrix elements relevant for the 1->2 \
+decays: \"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[1, 0.5, 0],
+  FrontFaceColor->RGBColor[1, 0.5, 0],
+  BackFaceColor->RGBColor[1, 0.5, 0],
+  GraphicsColor->RGBColor[1, 0.5, 0],
+  FontWeight->Bold,
+  FontColor->RGBColor[1, 0.5, 0]]], "Print",
+ CellChangeTimes->{3.733453682206154*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   DynamicBox[ToBoxes[PRIVATE`mycounter, StandardForm],
+    ImageSizeCache->{29., {1., 8.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+   "\[InvisibleSpace]", "1838"}],
+  SequenceForm[
+   Dynamic[PRIVATE`mycounter], " / ", 1838],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7334536822582817`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Squared matrix elent compute in \"\>", "\[InvisibleSpace]", 
+   "1129.501205`", "\[InvisibleSpace]", "\<\" seconds.\"\>"}],
+  SequenceForm["Squared matrix elent compute in ", 1129.501205, " seconds."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.733457277066119*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   DynamicBox[ToBoxes[PRIVATE`mycounter, StandardForm],
+    ImageSizeCache->{29., {1., 8.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+   "\[InvisibleSpace]", "3134"}],
+  SequenceForm[
+   Dynamic[PRIVATE`mycounter], " / ", 3134],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7334572892520247`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Decay widths computed in \"\>", "\[InvisibleSpace]", 
+   "40969.643642`", "\[InvisibleSpace]", "\<\" seconds.\"\>"}],
+  SequenceForm["Decay widths computed in ", 40969.643642, " seconds."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.733502394946506*^9}],
+
+Cell[BoxData["\<\"Preparing Python output.\"\>"], "Print",
+ CellChangeTimes->{3.733502395923697*^9}],
+
+Cell[BoxData["\<\"    - Splitting vertices into building blocks.\"\>"], \
+"Print",
+ CellChangeTimes->{3.7335024643259163`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Splitting of vertices distributed over \"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" kernels.\"\>"}],
+  SequenceForm["Splitting of vertices distributed over ", 2, " kernels."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.733502490716116*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"    - Optimizing: \"\>", "\[InvisibleSpace]", 
+   DynamicBox[ToBoxes[PRIVATE`PY$SplitVertexCounter, StandardForm],
+    ImageSizeCache->{38., {1., 8.}}], "\[InvisibleSpace]", "\<\"/\"\>", 
+   "\[InvisibleSpace]", "12331", "\[InvisibleSpace]", "\<\" .\"\>"}],
+  SequenceForm["    - Optimizing: ", 
+   Dynamic[PRIVATE`PY$SplitVertexCounter], "/", 12331, " ."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7335031311353083`*^9}],
+
+Cell[BoxData["\<\"    - Writing files.\"\>"], "Print",
+ CellChangeTimes->{3.733506869940014*^9}],
+
+Cell[BoxData["\<\"Done!\"\>"], "Print",
+ CellChangeTimes->{3.7335085757806597`*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 655},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
+2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1156, 28, 131, "Input"],
+Cell[CellGroupData[{
+Cell[1761, 54, 91, 1, 22, "Print"],
+Cell[1855, 57, 368, 8, 21, "Print"],
+Cell[2226, 67, 145, 2, 22, "Print"],
+Cell[2374, 71, 77, 1, 21, "Print"],
+Cell[2454, 74, 90, 1, 21, "Print"],
+Cell[2547, 77, 140, 2, 22, "Print"],
+Cell[2690, 81, 140, 2, 22, "Print"],
+Cell[2833, 85, 77, 1, 21, "Print"],
+Cell[2913, 88, 109, 1, 22, "Print"],
+Cell[3025, 91, 77, 1, 21, "Print"],
+Cell[3105, 94, 144, 2, 22, "Print"],
+Cell[3252, 98, 116, 1, 22, "Print"],
+Cell[3371, 101, 83, 1, 21, "Print"],
+Cell[3457, 104, 220, 5, 21, "Print"],
+Cell[3680, 111, 86, 1, 21, "Print"],
+Cell[3769, 114, 146, 2, 22, "Print"],
+Cell[3918, 118, 124, 2, 22, "Print"],
+Cell[4045, 122, 76, 1, 21, "Print"],
+Cell[4124, 125, 106, 1, 22, "Print"],
+Cell[4233, 128, 109, 1, 22, "Print"],
+Cell[4345, 131, 109, 1, 22, "Print"],
+Cell[4457, 134, 288, 6, 37, "Print"],
+Cell[4748, 142, 258, 6, 22, "Print"],
+Cell[5009, 150, 157, 2, 22, "Print"],
+Cell[5169, 154, 153, 2, 22, "Print"],
+Cell[5325, 158, 348, 9, 22, "Print"],
+Cell[5676, 169, 105, 1, 22, "Print"],
+Cell[5784, 172, 94, 1, 21, "Print"],
+Cell[5881, 175, 215, 5, 21, "Print"],
+Cell[6099, 182, 104, 1, 22, "Print"],
+Cell[6206, 185, 328, 8, 26, "Print"],
+Cell[6537, 195, 308, 8, 26, "Print"],
+Cell[6848, 205, 318, 8, 26, "Print"],
+Cell[7169, 215, 308, 8, 26, "Print"],
+Cell[7480, 225, 127, 2, 22, "Print"],
+Cell[7610, 229, 348, 9, 22, "Print"],
+Cell[7961, 240, 103, 1, 22, "Print"],
+Cell[8067, 243, 285, 6, 22, "Print"],
+Cell[8355, 251, 138, 2, 22, "Print"],
+Cell[8496, 255, 621, 13, 22, "Print"],
+Cell[9120, 270, 222, 5, 21, "Print"],
+Cell[9345, 277, 573, 12, 22, "Print"],
+Cell[9921, 291, 116, 1, 21, "Print"],
+Cell[10040, 294, 384, 10, 22, "Print"],
+Cell[10427, 306, 344, 9, 21, "Print"],
+Cell[10774, 317, 322, 6, 22, "Print"],
+Cell[11099, 325, 344, 9, 21, "Print"],
+Cell[11446, 336, 310, 6, 22, "Print"],
+Cell[11759, 344, 100, 1, 22, "Print"],
+Cell[11862, 347, 126, 2, 22, "Print"],
+Cell[11991, 351, 315, 6, 22, "Print"],
+Cell[12309, 359, 480, 9, 22, "Print"],
+Cell[12792, 370, 96, 1, 22, "Print"],
+Cell[12891, 373, 83, 1, 21, "Print"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
