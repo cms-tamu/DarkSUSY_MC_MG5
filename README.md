@@ -37,7 +37,7 @@ When the prompt asks you `Do you want to edit a card (press enter to bypass edit
 Also you have the option to edit `run_card.dat` to change run settings, such as number of events, center of mass enegry, etc.
 And change model parameter settings in `param_card.dat`.
 
-After you finish editing and saving the card, the event generation starts. A `lhe.gz` file will be generated under `MG5_aMC_v2_6_1/DarkSUSY/Events/` directory.
+After you finish editing and saving the card, the event generation starts. A `lhe.gz` file will be generated under `MG5_aMC_v2_6_1/DarkSUSY/Events/run_01_decayed_1` directory.
 
 Unzip the file to get the .lhe file:
 
