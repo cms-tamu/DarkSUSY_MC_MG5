@@ -37,13 +37,11 @@ When the prompt asks you `Do you want to edit a card (press enter to bypass edit
 Also you have the option to edit `run_card.dat` to change run settings, such as number of events, center of mass enegry, etc.
 And change model parameter settings in `param_card.dat`.
 
-After you finish editing the card, save the card and start the event generation. lhe.gz file along with a txt setting file will be generated under `MG5_aMC_v2_6_1/DarkSUSY/Events/` directory.
+After you finish editing and saving the card, the event generation starts. A `lhe.gz` file will be generated under `MG5_aMC_v2_6_1/DarkSUSY/Events/` directory.
 
 Unzip the file to get the .lhe file:
 
     gunzip -d *.lhe.gz
-
-Repeat generation for other masses of Higgs by editing the higgs mass in param_card.dat.
 
 ## Change dark photon lifetime
 
