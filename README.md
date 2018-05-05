@@ -8,10 +8,9 @@
     tar -xzf MG5_aMC_v2.6.1.tar.gz
 
 ## Get UFO model 
-Go to the folder `MG5_aMC_v2_6_1/models`. Copy the UFO model here and unzip it:
+Go to the folder `MG5_aMC_v2_6_1/models`. Copy the UFO model there and unzip it to folder `MSSMD_UFO`:
 
-    wget https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/MSSMD_UFO.tar.gz
-    tar -xzf MSSMD_UFO.tar.gz
+    wget https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/MSSMD_UFO.zip
 
 ## Set up processes
 Edit the file `MG5_aMC_v2_6_1/proc_card.dat` to be same as this [proc_card.dat](https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/proc_card.dat)
