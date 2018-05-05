@@ -18,17 +18,22 @@
 #*     run as ./bin/mg5  filename                           *
 #*                                                          *
 #************************************************************
-#import model heft
-# Define multiparticle labels
-#define p = g u c d s u~ c~ d~ s~
-#define j = g u c d s u~ c~ d~ s~
-#define l+ = e+ mu+
-#define l- = e- mu-
-#define vl = ve vm
-#define vl~ = ve~ vm~
-import model MSSMD_UFO
-# Specify process(es) to run
-generate p p > h,(h > n1 n1, (n1 > ad nD, ad > mu+ mu-))
+set group_subprocesses Auto
+set ignore_six_quark_processes False
+set loop_optimized_output True
+set loop_color_flows False
+set gauge unitary
+set complex_mass_scheme False
+set max_npoint_for_channel 0
+import model sm
+define p = g u c d s u~ c~ d~ s~
+define j = g u c d s u~ c~ d~ s~
+define l+ = e+ mu+
+define l- = e- mu-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+import model heft
+generate g g > h
 # Output processes to MadEvent directory
 output DarkSUSY -nojpeg 
 # This will create a directory PROC_$MODELNAME_$X
