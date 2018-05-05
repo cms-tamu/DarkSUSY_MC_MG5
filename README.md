@@ -12,16 +12,18 @@ Go to the folder `MG5_aMC_v2_6_1/models`. Copy the UFO model there and unzip it 
 
     wget https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/MSSMD_UFO.zip
 
+Go to the folder `MSSMD_UFO` and do:
+
+    python write_param_card.py
+
+A `param_card.dat`will be generated. This will be used later for the decay.
+
 ## Set up processes
-Edit the file `MG5_aMC_v2_6_1/proc_card.dat` to be same as this [proc_card.dat](https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/proc_card.dat)
-
-## Check the process
-Run `./MG5_aMC_v2_6_1/bin/mg5_aMC proc_card.dat` and a folder called `DarkSUSY` will be generated. 
-
-Use `firefox DarkSUSY/index.html` to check the process.
-
-## Edit model parameters
-The model parameters include masses and widths for particles and coupling constants. They are defined in file `param_card.dat` in the `DarkSUSY/Cards` folder.
+Copy the proc_card.dat to directory `MG5_aMC_v2_6_1`:
+    
+    wget https://raw.githubusercontent.com/weishi10141993/DarkSUSY_MC_MG5/master/MSSMDarkSector/proc_card.dat
+    
+Run `./bin/mg5_aMC proc_card.dat` and a folder called `DarkSUSY` will be generated. 
 
 ## Generate events 
 
