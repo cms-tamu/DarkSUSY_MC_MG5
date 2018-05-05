@@ -13,7 +13,7 @@
 #************************************************************
 set spinmode none
 # specify the decay for the final state particles
-import model MSSMD_UFO  MSSMD_UFO/param_card.dat --bypass_check
+import model MSSMD_UFO /afs/cern.ch/work/w/wshi/public/MadGraph5/MG5_aMC_v2_6_1/models/MSSMD_UFO/param_card.dat --bypass_check
 decay h > n1 n1, (n1 > ad nD, ad > mu+ mu-)
 # running the actual code
 launch
