@@ -16,16 +16,16 @@ Go to the folder `MSSMD_UFO` and do:
 
     python write_param_card.py
 
-A `param_card.dat`will be generated. This will be used later for the decay.
+A `param_card.dat`will be generated. This will be used later for the decay in `madspin_card.dat`.
 
-## Set up processes
+## Set up ggH processes
 Copy the proc_card.dat to directory `MG5_aMC_v2_6_1`:
     
     wget https://raw.githubusercontent.com/weishi10141993/DarkSUSY_MC_MG5/master/MSSMDarkSector/proc_card.dat
     
 Run `./bin/mg5_aMC proc_card.dat` and a folder called `DarkSUSY` will be generated. 
 
-## Generate events 
+## Generate and decay particles
 
     cd /MadGraph5/MG5_aMC_v2_6_1/DarkSUSY/bin
     ./generate_events
