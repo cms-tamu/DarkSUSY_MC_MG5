@@ -27,8 +27,8 @@ Run `./bin/mg5_aMC proc_card.dat` and a folder called `DarkSUSY` will be generat
 
 ## Generate and decay particles
 
-    cd /MadGraph5/MG5_aMC_v2_6_1/DarkSUSY/bin
-    ./generate_events
+    cd /MadGraph5/MG5_aMC_v2_6_1/DarkSUSY
+    ./bin/generate_events
 
 When the prompt shows `The following switches determine which programs are run...`, switch `madspin = OFF` to `madspin = ON` following the way it gives.
 
