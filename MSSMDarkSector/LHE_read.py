@@ -2,9 +2,8 @@ import ROOT, array, os, re, math, random, string
 from math import *
 from operator import itemgetter
 
-#************************************
-# User modify contents b/t ***** ONLY
-#************************************
+# !!! User modify contents b/t ***** ONLY !!!
+#*********************************************
 filename = "DarkSUSY_mH_125_mN1_10_mND_1_mGammaD_0p25_13TeV_cT_100_events80k.lhe"
 f = open(filename, 'r')
 
@@ -14,7 +13,7 @@ mass_GammaD = "0p25" #pure string
 mass_GammaD_Legend = "0.25" #numerical string
 lifetime_GammaD = "100" #pure string
 lifetime_GammaD_Legend = "100" #numerical string
-#*************************************
+#*********************************************
 
 #global constant 
 higgsID = 25
