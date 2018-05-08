@@ -2,33 +2,31 @@ import ROOT, array, os, re, math, random, string
 from math import *
 from operator import itemgetter
 
+#************************************
+# User modify contents b/t ***** ONLY
+#************************************
+filename = "DarkSUSY_mH_125_mN1_10_mND_1_mGammaD_0p25_13TeV_cT_100_events80k.lhe"
+f = open(filename, 'r')
+
+#mass in GeV
+n1Mass = "10"
+mass_GammaD = "0p25" #pure string
+mass_GammaD_Legend = "0.25" #numerical string
+lifetime_GammaD = "100" #pure string
+lifetime_GammaD_Legend = "100" #numerical string
+#*************************************
+
+#global constant 
 higgsID = 25
 n1ID = 1000022 
 nDID = 3000001 
 gammaDID = 3000022
 muonID = 13
 nExit = 80002
-
-#========================================
-#global constant for all DarkSUSY samples
-#========================================
 hMass = "125"
 nDMass = "1"
 energy = "13"
 mass_Higgs = "125"
-
-#two types of mGammaD: 0pXX or integer
-filename = "DarkSUSY_mH_125_mN1_10_mND_1_mGammaD_0p25_13TeV_cT_100_events80k.lhe"
-f = open(filename, 'r')
-#==================================
-#local variable depending on sample
-#==================================
-#lightest neutralino mass in GeV
-n1Mass = "10"
-mass_GammaD = "0p25" #pure string
-mass_GammaD_Legend = "0.25" #numerical string
-lifetime_GammaD = "100" #pure string
-lifetime_GammaD_Legend = "100" #numerical string
 
 print mass_GammaD
 print lifetime_GammaD
