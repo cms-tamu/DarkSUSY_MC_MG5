@@ -35,7 +35,6 @@ When the prompt shows `The following switches determine which programs are run..
 When the prompt asks you `Do you want to edit a card (press enter to bypass editing)?`, type the number to edit the `madspin_card.dat` to be same as [this](https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/madspin_card.dat).
 
 Also you have the option to edit `run_card.dat` to change run settings, such as number of events, center of mass enegry, etc.
-And change model parameter settings in `param_card.dat`.
 
 After you finish editing and saving the card, the event generation starts. A `lhe.gz` file will be generated under `MG5_aMC_v2_6_1/DarkSUSY/Events/run_01_decayed_1` directory.
 
