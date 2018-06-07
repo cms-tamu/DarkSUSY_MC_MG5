@@ -16,7 +16,7 @@ Go to the folder `MSSMD_UFO` and do:
 
     python write_param_card.py
 
-A `param_card.dat`will be generated. This will be used later for the decay in `madspin_card.dat`. You can manually change the mass of dark photon (3000022, MAD, default is 0.25 GeV), lightest neutalino (1000022, Mneu1) and dark neutralino (3000001, MneuD).
+A `param_card.dat` will be generated. This will be used later for the decay in `madspin_card.dat`. You can manually change the mass of dark photon (3000022, MAD, default is 0.25 GeV), lightest neutalino (1000022, Mneu1) and dark neutralino (3000001, MneuD) in this `param_card.dat`.
 
 ## Set up ggH processes
 Copy the proc_card.dat to directory `MG5_aMC_v2_6_1`:
