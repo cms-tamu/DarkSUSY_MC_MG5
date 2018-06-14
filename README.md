@@ -51,6 +51,8 @@ Unzip the file to get the .lhe file:
 ## Change dark photon lifetime
 
     wget https://raw.githubusercontent.com/weishi10141993/DarkSUSY_MC_MG5/master/MSSMDarkSector/replace_lifetime_in_LHE.py
+The lifetime can be changed in line 8 (default is 100 mm): `ctau_mean_mm = 100`
+    
     python replace_lifetime_in_LHE.py > DarkSUSY_mH_125_mN1_10_mND_1_mGammaD_0p25_13TeV_cT_100_events80k.lhe
 
 ## LHE Validation [Optional]
