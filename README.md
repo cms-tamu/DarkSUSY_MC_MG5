@@ -27,12 +27,18 @@ Run `./bin/mg5_aMC proc_card.dat` and a folder called `DarkSUSY` will be generat
 
 ## Generate and decay particles
 
-    cd /MadGraph5/MG5_aMC_v2_6_1/DarkSUSY
+    cd /MadGraph5/MG5_aMC_v2_6_1/DarkSUSY/Cards
+    
+Copy the madspin card to the `Cards` directory:
+
+    wget https://raw.githubusercontent.com/weishi10141993/DarkSUSY_MC_MG5/master/MSSMDarkSector/madspin_card.dat
+
+Then go back to `DarkSUSY` and generate the events:
+
+    cd ..
     ./bin/generate_events
 
-When the prompt shows `The following switches determine which programs are run...`, switch `madspin = OFF` to `madspin = ON` following the way it gives.
-
-When the prompt asks you `Do you want to edit a card (press enter to bypass editing)?`, type the number to edit the `madspin_card.dat` to be same as [this](https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/madspin_card.dat).
+Check the prompt shows `madspin = ON` and the `madspin_card.dat` is be same as the one you just [copied](https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/madspin_card.dat).
 
 Also you have the option to edit `run_card.dat` to change run settings, such as number of events, center of mass enegry, etc.
 
