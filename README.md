@@ -33,7 +33,7 @@ Copy the madspin card to the `Cards` directory:
 
     wget https://raw.githubusercontent.com/weishi10141993/DarkSUSY_MC_MG5/master/MSSMDarkSector/madspin_card.dat
 
-Then go back to `DarkSUSY` and generate the events:
+Then go back to `DarkSUSY` folder and generate the events:
 
     cd ..
     ./bin/generate_events
