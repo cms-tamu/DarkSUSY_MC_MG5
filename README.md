@@ -38,7 +38,7 @@ Then go back to `DarkSUSY` folder and generate the events:
     cd ..
     ./bin/generate_events
 
-Check the prompt shows `madspin = ON` and the `madspin_card.dat` is be same as the one you just [copied](https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/madspin_card.dat).
+Check the prompt shows `madspin = ON` and the `madspin_card.dat` is same as the one you just [copied](https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/madspin_card.dat).
 
 Also you have the option to edit `run_card.dat` to change run settings, such as number of events, center of mass enegry, etc.
 
