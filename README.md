@@ -1,5 +1,5 @@
 # Private DarkSUSY MC in MG5
-Note: The model implementation is now in the [official database](https://feynrules.irmp.ucl.ac.be/wiki/MSSMD). Make sure to cite the reference before use in public.
+Note: The model implementation is now in the [model database](https://feynrules.irmp.ucl.ac.be/wiki/MSSMD) in FeynRules. Make sure to cite the reference before use in public.
 
 ## Create a directory and upload the package to the directory
 
