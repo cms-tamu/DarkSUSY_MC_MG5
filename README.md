@@ -24,17 +24,17 @@ Copy the proc_card.dat to directory `MG5_aMC_v2_6_1`:
     
     wget https://raw.githubusercontent.com/weishi10141993/DarkSUSY_MC_MG5/master/MSSMDarkSector/proc_card.dat
     
-Run `./bin/mg5_aMC proc_card.dat` and a folder called `DarkSUSY` will be generated. 
+Run `./bin/mg5_aMC proc_card.dat` and a folder called `MSSMD` will be generated. 
 
 ## Generate and decay particles
 
-    cd /MadGraph5/MG5_aMC_v2_6_1/DarkSUSY/Cards
+    cd /MadGraph5/MG5_aMC_v2_6_1/MSSMD/Cards
     
 Copy the madspin card to the `Cards` directory:
 
     wget https://raw.githubusercontent.com/weishi10141993/DarkSUSY_MC_MG5/master/MSSMDarkSector/madspin_card.dat
 
-Then go back to `DarkSUSY` folder and generate the events:
+Then go back to `MSSMD` folder and generate the events:
 
     cd ..
     ./bin/generate_events
