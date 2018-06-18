@@ -35,7 +35,7 @@ define vl~ = ve~ vm~ vt~
 import model heft
 generate g g > h
 # Output processes to MadEvent directory
-output DarkSUSY -nojpeg 
+output MSSMD -nojpeg 
 # This will create a directory PROC_$MODELNAME_$X
 # If you want to specify the path/name of the directory use
 # output PATH
