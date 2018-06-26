@@ -1170,7 +1170,8 @@ for line in f:
                     if 'asrwt' in word: break
                     if 'pdfrwt' in word: break
                     if 'totfact' in word: break
-			
+		    if 'wgt' in word: break    
+		
 		    word_n = word_n + 1
 		    if word_n ==  1: IDUP    = int(word)   # particle PDG identity code
 		    if word_n ==  2: ISTUP   = int(word)   # status code
