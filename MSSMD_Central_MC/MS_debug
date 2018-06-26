@@ -1,0 +1,68 @@
+import events.lhe.gz
+set seed 1000000
+
+
+
+
+
+
+
+
+
+
+
+
+
+set spinmode none
+
+import model MSSMD_UFO ../mgbasedir/models/MSSMD_UFO/param_card.dat --bypass_check
+
+decay h > n1 n1, (n1 > ad nD, ad > mu+ mu-)
+
+launch
+Traceback (most recent call last):
+  File "/afs/cern.ch/work/w/wshi/public/Test/CMSSW_7_1_30/src/mgbasedir/madgraph/interface/extended_cmd.py", line 1438, in onecmd
+    return self.onecmd_orig(line, **opt)
+  File "/afs/cern.ch/work/w/wshi/public/Test/CMSSW_7_1_30/src/mgbasedir/madgraph/interface/extended_cmd.py", line 1392, in onecmd_orig
+    return func(arg, **opt)
+  File "/afs/cern.ch/work/w/wshi/public/Test/CMSSW_7_1_30/src/mgbasedir/madgraph/various/misc.py", line 99, in f_with_no_logger
+    out = f(self, *args, **opt)
+  File "/afs/cern.ch/work/w/wshi/public/Test/CMSSW_7_1_30/src/mgbasedir/MadSpin/interface_madspin.py", line 536, in do_launch
+    return self.run_bridge(line)
+  File "/afs/cern.ch/work/w/wshi/public/Test/CMSSW_7_1_30/src/mgbasedir/MadSpin/interface_madspin.py", line 783, in run_bridge
+    evt_decayfile[pdg] = self.generate_events(pdg, nb_needed, mg5)
+  File "/afs/cern.ch/work/w/wshi/public/Test/CMSSW_7_1_30/src/mgbasedir/MadSpin/interface_madspin.py", line 1001, in generate_events
+    mg5.exec_cmd("output %s -f" % decay_dir)
+  File "/afs/cern.ch/work/w/wshi/public/Test/CMSSW_7_1_30/src/mgbasedir/madgraph/interface/extended_cmd.py", line 1465, in exec_cmd
+    stop = Cmd.onecmd_orig(current_interface, line, **opt)
+  File "/afs/cern.ch/work/w/wshi/public/Test/CMSSW_7_1_30/src/mgbasedir/madgraph/interface/extended_cmd.py", line 1392, in onecmd_orig
+    return func(arg, **opt)
+  File "/afs/cern.ch/work/w/wshi/public/Test/CMSSW_7_1_30/src/mgbasedir/madgraph/interface/master_interface.py", line 287, in do_output
+    self.cmd.do_output(self, line, *args, **opts)
+  File "/afs/cern.ch/work/w/wshi/public/Test/CMSSW_7_1_30/src/mgbasedir/madgraph/interface/madgraph_interface.py", line 7440, in do_output
+    self._curr_exporter.copy_template(self._curr_model)
+  File "/afs/cern.ch/work/w/wshi/public/Test/CMSSW_7_1_30/src/mgbasedir/madgraph/iolibs/export_v4.py", line 3415, in copy_template
+    super(ProcessExporterFortranME, self).copy_template(model)
+  File "/afs/cern.ch/work/w/wshi/public/Test/CMSSW_7_1_30/src/mgbasedir/madgraph/iolibs/export_v4.py", line 304, in copy_template
+    pjoin(self.dir_path, 'Source'))
+  File "/afs/cern.ch/work/w/wshi/public/Test/CMSSW_7_1_30/src/mgbasedir/madgraph/iolibs/files.py", line 143, in cp
+    shutil.copytree(path1, path2)
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc481/external/python/2.7.6/lib/python2.7/shutil.py", line 171, in copytree
+    names = os.listdir(src)
+OSError: [Errno 2] No such file or directory: '/afs/cern.ch/work/w/wshi/public/Test/CMSSW_7_1_30/src/mgbasedir/vendor/DiscreteSampler/DiscreteSampler.f'
+Related File: /afs/cern.ch/work/w/wshi/public/Test/CMSSW_7_1_30/src/mgbasedir/vendor/DiscreteSampler/DiscreteSampler.f
+Value of current Options:
+                 spinmode 	:	none
+             onlyhelicity 	:	False
+                     seed 	:	1000000
+      max_weight_ps_point 	:	400
+              fixed_order 	:	False
+                 nb_sigma 	:	4.51217354724
+                 run_card 	:	None
+   Nevents_for_max_weigth 	:	75
+                   BW_cut 	:	15.0
+              use_old_dir 	:	False
+               max_weight 	:	-1
+                 curr_dir 	:	/afs/cern.ch/work/w/wshi/public/Test/CMSSW_7_1_30/src/process
+                   ms_dir 	:	None
+      max_running_process 	:	100
