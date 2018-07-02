@@ -3,10 +3,11 @@ Note: The model implementation is now in the [model database](https://feynrules.
 
 ## Prepare cards
 Central MC is different to private MC. 
-All cards (MSSMD_\*) are uploaded to central card repository in cms-sw/genproductions/bin/MadGraph5_aMCatNLO/cards/2017/13TeV/MSSMD. 
+All cards (MSSMD_\*) are uploaded to central card repository in cms-sw/genproductions/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/MSSMD. 
 
 The `gridpack_generation.sh` script is modified in order to, 
 1) get the UFO model from a private repository since it's not in the central model DB yet; 
-2) to accomodate our parameter change (dark photon and n1 mass, etc), copying customized `param_card.dat` to the UFO model folder for each different mass points. 
+2) to copy customized `param_card.dat` to the UFO model folder for each different mass points;
+3) resolve the path confusion in madspin card 
 
 The `runcmsgrid_LO.sh` script is modified to run the lifetime script for the dark photon once LHE is created.
