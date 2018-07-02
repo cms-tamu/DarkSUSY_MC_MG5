@@ -3,7 +3,7 @@ Note: The model implementation is now in the [model database](https://feynrules.
 
 ## Prepare cards
 Central MC is different to private MC. 
-All cards (MSSMD_\*) must be prepared beforehand and upload to central card repository. 
+All cards (MSSMD_\*) are uploaded to central card repository in cms-sw/genproductions/bin/MadGraph5_aMCatNLO/cards/2017/13TeV/MSSMD. 
 
 The `gridpack_generation.sh` script is modified in order to, 
 1) get the UFO model from a private repository since it's not in the central model DB yet; 
