@@ -11,7 +11,8 @@ Note: The model implementation is now in the [model database](https://feynrules.
 ## Get UFO model 
 Go to the folder `MG5_aMC_v2_6_1/models`. Copy the UFO model there and unzip it to folder `MSSMD_UFO`:
 
-    wget https://github.com/weishi10141993/DarkSUSY_MC_MG5/blob/master/MSSMDarkSector/MSSMD_UFO.zip
+    wget --no-check-certificate https://github.com/weishi10141993/DarkSUSY_MC_MG5/raw/master/MSSMDarkSector/MSSMD_UFO.tar.gz
+    tar xavf MSSMD_UFO.tar.gz
 
 Go to the folder `MSSMD_UFO` and do:
 
