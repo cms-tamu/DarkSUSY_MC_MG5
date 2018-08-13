@@ -194,7 +194,8 @@ if [ ! -d ${AFS_GEN_FOLDER}/${name}_gridpack ]; then
   #############################################
   #Apply any necessary patches on top of official release
   #############################################
-
+  mv $MGBASEDIRORIG mgbasedir
+  MGBASEDIRORIG=$(echo mgbasedir)
   cd $MGBASEDIRORIG
   cat $PRODHOME/patches/*.patch | patch -p1
 
