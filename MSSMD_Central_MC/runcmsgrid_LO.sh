@@ -259,6 +259,11 @@ if [ -f process/madspin_card.dat ] ;then
     gzip -d  cmsgrid_final.lhe.gz
 fi
 
+if [ -e replace_lifetime_in_LHE.py ]; then
+    python replace_lifetime_in_LHE.py > cmsgrid_temp.lhe
+    mv cmsgrid_temp.lhe cmsgrid_final.lhe
+fi
+
 ls -l
 echo
 
