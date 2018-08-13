@@ -283,7 +283,8 @@ if [ ! -d ${AFS_GEN_FOLDER}/${name}_gridpack ]; then
       #get needed BSM model
       if [[ $model = *[!\ ]* ]]; then
         echo "Loading extra model $model"
-        wget --no-verbose --no-check-certificate https://cms-project-generators.web.cern.ch/cms-project-generators/$model	
+        wget --no-verbose --no-check-certificate https://cms-project-generators.web.cern.ch/cms-project-generators/$model
+	wget --no-verbose --no-check-certificate https://github.com/weishi10141993/DarkSUSY_MC_MG5/raw/master/MSSMDarkSector/$model
         cd models
         if [[ $model == *".zip"* ]]; then
           unzip ../$model
@@ -294,6 +295,9 @@ if [ ! -d ${AFS_GEN_FOLDER}/${name}_gridpack ]; then
         else 
           echo "A BSM model is specified but it is not in a standard archive (.zip or .tar)"
         fi
+	cd ${name}_UFO
+	cp $CARDSDIR/UFO_param_card.dat param_card.dat
+	cd ..
         cd ..
       fi
     done
