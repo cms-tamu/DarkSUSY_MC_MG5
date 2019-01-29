@@ -24,7 +24,7 @@ Go to the folder `MSSMD_UFO` and do:
 A `param_card.dat` will be generated. This will be used later for the decay in `madspin_card.dat`. You can manually change the mass of dark photon (3000022, MAD, default is 0.25 GeV), lightest neutalino (1000022, Mneu1, default is 10 GeV) and dark neutralino (3000001, MneuD, default is 1 GeV) in this `param_card.dat`.
 
 ## Set up ggH processes
-Remove the default proc_card.dat in the `MG5_aMC_vXXX` directory and copy the following `proc_card.dat` there:
+Remove the default `proc_card.dat` in the `MG5_aMC_vXXX` directory and copy the following `proc_card.dat` there:
     
     wget https://raw.githubusercontent.com/weishi10141993/DarkSUSY_MC_MG5/master/MSSMDarkSector/proc_card.dat
     
