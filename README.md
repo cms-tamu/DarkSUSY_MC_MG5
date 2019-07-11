@@ -14,11 +14,13 @@ Note: The model implementation is now in the [model database](https://feynrules.
 ## Get UFO model 
 Go to the folder `MG5_aMC_vXXX/models`. Copy the UFO model there and unzip it to folder `MSSMD_UFO`:
 
+    cd MG5_aMC_v2_4_2/models/
     wget --no-check-certificate https://github.com/weishi10141993/DarkSUSY_MC_MG5/raw/master/MSSMDarkSector/MSSMD_UFO.tar.gz
     tar xavf MSSMD_UFO.tar.gz
 
 Go to the folder `MSSMD_UFO` and do:
 
+    cd MSSMD_UFO/
     python write_param_card.py
 
 A `param_card.dat` will be generated. This will be used later for the decay in `madspin_card.dat`. You can manually change the mass of dark photon (3000022, MAD, default is 0.25 GeV), lightest neutalino (1000022, Mneu1, default is 10 GeV) and dark neutralino (3000001, MneuD, default is 1 GeV) in this `param_card.dat`.
